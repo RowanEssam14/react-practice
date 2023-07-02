@@ -935,810 +935,1395 @@
     }
   ],
   "films": [
-      {
-        "name": "A New Hope",
-        "episode_id": 4,
-        "opening_crawl": "It is a period of civil war.\r\nRebel spaceships, striking\r\nfrom a hidden base, have won\r\ntheir first victory against\r\nthe evil Galactic Empire.\r\n\r\nDuring the battle, Rebel\r\nspies managed to steal secret\r\nplans to the Empire's\r\nultimate weapon, the DEATH\r\nSTAR, an armored space\r\nstation with enough power\r\nto destroy an entire planet.\r\n\r\nPursued by the Empire's\r\nsinister agents, Princess\r\nLeia races home aboard her\r\nstarship, custodian of the\r\nstolen plans that can save her\r\npeople and restore\r\nfreedom to the galaxy....",
-        "director": "George Lucas",
-        "producer": "Gary Kurtz, Rick McCallum",
-        "release_date": "1977-05-25",
-        "characters": [
-          {
-            "id": 1,
-            "name": "Luke Skywalker"
-          },
-          {
-            "id": 2,
-            "name": "C-3PO"
-          },
-          {
-            "id": 3,
-            "name": "R2-D2"
-          },
-          {
-            "id": 4,
-            "name": "Darth Vader"
-          },
-          {
-            "id": 5,
-            "name": "Leia Organa"
-          },
-          {
-            "id": 6,
-            "name": "Owen Lars"
-          },
-          {
-            "id": 7,
-            "name": "Beru Whitesun lars"
-          },
-          {
-            "id": 8,
-            "name": "R5-D4"
-          },
-          {
-            "id": 9,
-            "name": "Biggs Darklighter"
-          },
-          {
-            "id": 10,
-            "name": "Obi-Wan Kenobi"
-          },
-          {
-            "id": 12,
-            "name": "Wilhuff Tarkin"
-          },
-          {
-            "id": 13,
-            "name": "Chewbacca"
-          },
-          {
-            "id": 14,
-            "name": "Han Solo"
-          },
-          {
-            "id": 15,
-            "name": "Greedo"
-          }
-        ],
-        "planets": [
-          {
-            "id": 1,
-            "name": "Tatooine"
-          },
-          {
-            "id": 2,
-            "name": "Alderaan"
-          },
-          {
-            "id": 3,
-            "name": "Yavin IV"
-          }
-        ],
-        "starships": [
-          {
-            "id": 2,
-            "name": "CR90 corvette"
-          },
-          {
-            "id": 3,
-            "name": "Star Destroyer"
-          },
-          {
-            "id": 5,
-            "name": "Sentinel-class landing craft"
-          },
-          {
-            "id": 9,
-            "name": "Death Star"
-          },
-          {
-            "id": 10,
-            "name": "Millennium Falcon"
-          },
-          {
-            "id": 11,
-            "name": "Y-wing"
-          },
-          {
-            "id": 12,
-            "name": "X-wing"
-          },
-          {
-            "id": 13,
-            "name": "TIE Advanced x1"
-          }
-        ],
-        "vehicles": [
-          {
-            "id": 4,
-            "name": "Sand Crawler"
-          },
-          {
-            "id": 6,
-            "name": "T-16 skyhopper"
-          },
-          {
-            "id": 7,
-            "name": "X-34 landspeeder"
-          },
-          {
-            "id": 8,
-            "name": "TIE/LN starfighter"
-          }
-        ],
-        "species": [
-          {
-            "id": 1,
-            "name": "Human"
-          },
-          {
-            "id": 2,
-            "name": "Droid"
-          },
-          {
-            "id": 3,
-            "name": "Wookie"
-          },
-          {
-            "id": 4,
-            "name": "Rodian"
-          },
-          {
-            "id": 5,
-            "name": "Hutt"
-          }
-        ],
-        "created": "2014-12-10T14:23:31.880000Z",
-        "edited": "2014-12-20T19:49:45.256000Z"
-      },
-      {
-        "name": "The Empire Strikes Back",
-        "episode_id": 5,
-        "opening_crawl": "It is a dark time for the\r\nRebellion. Although the Death\r\nStar has been destroyed,\r\nImperial troops have driven the\r\nRebel forces from their hidden\r\nbase and pursued them across\r\nthe galaxy.\r\n\r\nEvading the dreaded Imperial\r\nStarfleet, a group of freedom\r\nfighters led by Luke Skywalker\r\nhas established a new secret\r\nbase on the remote ice world\r\nof Hoth.\r\n\r\nThe evil lord Darth Vader,\r\nobsessed with finding young\r\nSkywalker, has dispatched\r\nthousands of remote probes into\r\nthe far reaches of space....",
-        "director": "Irvin Kershner",
-        "producer": "Gary Kurtz, Rick McCallum",
-        "release_date": "1980-05-17",
-        "characters": [
-          {
-            "id": 1,
-            "name": "Luke Skywalker"
-          },
-          {
-            "id": 2,
-            "name": "C-3PO"
-          },
-          {
-            "id": 3,
-            "name": "R2-D2"
-          },
-          {
-            "id": 4,
-            "name": "Darth Vader"
-          },
-          {
-            "id": 5,
-            "name": "Leia Organa"
-          },
-          {
-            "id": 10,
-            "name": "Obi-Wan Kenobi"
-          },
-          {
-            "id": 13,
-            "name": "Chewbacca"
-          },
-          {
-            "id": 14,
-            "name": "Han Solo"
-          },
-          {
-            "id": 18,
-            "name": "Wedge Antilles"
-          },
-          {
-            "id": 20,
-            "name": "Yoda"
-          },
-          {
-            "id": 21,
-            "name": "Palpatine"
-          },
-          {
-            "id": 22,
-            "name": "Boba Fett"
-          },
-          {
-            "id": 23,
-            "name": "IG-88"
-          },
-          {
-            "id": 24,
-            "name": "Bossk"
-          },
-          {
-            "id": 25,
-            "name": "Lando Calrissian"
-          },
-          {
-            "id": 26,
-            "name": "Lobot"
-          }
-        ],
-        "planets": [
-          {
-            "id": 4,
-            "name": "Hoth"
-          },
-          {
-            "id": 5,
-            "name": "Dagobah"
-          },
-          {
-            "id": 6,
-            "name": "Bespin"
-          },
-          {
-            "id": 27,
-            "name": "Ord Mantell"
-          }
-        ],
-        "starships": [
-          {
-            "id": 3,
-            "name": "Star Destroyer"
-          },
-          {
-            "id": 10,
-            "name": "Millennium Falcon"
-          },
-          {
-            "id": 11,
-            "name": "Y-wing"
-          },
-          {
-            "id": 12,
-            "name": "X-wing"
-          },
-          {
-            "id": 15,
-            "name": "Executor"
-          },
-          {
-            "id": 17,
-            "name": "Rebel transport"
-          },
-          {
-            "id": 21,
-            "name": "Slave 1"
-          },
-          {
-            "id": 22,
-            "name": "Imperial shuttle"
-          },
-          {
-            "id": 23,
-            "name": "EF76 Nebulon-B escort frigate"
-          }
-        ],
-        "vehicles": [
-          {
-            "id": 8,
-            "name": "TIE/LN starfighter"
-          },
-          {
-            "id": 14,
-            "name": "Snowspeeder"
-          },
-          {
-            "id": 4,
-            "name": "Sand Crawler"
-          },
-          {
-            "id": 6,
-            "name": "T-16 skyhopper"
-          },
-          {
-            "id": 7,
-            "name": "X-34 landspeeder"
-          },
-          {
-            "id": 8,
-            "name": "TIE/LN starfighter"
-          }
-        ],
-        "species": [
-          {
-            "id": 1,
-            "name": "Human"
-          },
-          {
-            "id": 2,
-            "name": "Droid"
-          },
-          {
-            "id": 3,
-            "name": "Wookie"
-          },
-          {
-            "id": 6,
-            "name": "Yoda's species"
-          },
-          {
-            "id": 7,
-            "name": "Trandoshan"
-          }
-        ],
-        "created": "2014-12-12T11:26:24.656000Z",
-        "edited": "2014-12-15T13:07:53.386000Z"
-      },
-      {
-        "name": "Return of the Jedi",
-        "episode_id": 6,
-        "opening_crawl": "Luke Skywalker has returned to\r\nhis home planet of Tatooine in\r\nan attempt to rescue his\r\nfriend Han Solo from the\r\nclutches of the vile gangster\r\nJabba the Hutt.\r\n\r\nLittle does Luke know that the\r\nGALACTIC EMPIRE has secretly\r\nbegun construction on a new\r\narmored space station even\r\nmore powerful than the first\r\ndreaded Death Star.\r\n\r\nWhen completed, this ultimate\r\nweapon will spell certain doom\r\nfor the small band of rebels\r\nstruggling to restore freedom\r\nto the galaxy...",
-        "director": "Richard Marquand",
-        "producer": "Howard G. Kazanjian, George Lucas, Rick McCallum",
-        "release_date": "1983-05-25",
-        "characters": [
-          {
-            "id": 1,
-            "name": "Luke Skywalker"
-          },
-          {
-            "id": 2,
-            "name": "C-3PO"
-          },
-          {
-            "id": 3,
-            "name": "R2-D2"
-          },
-          {
-            "id": 4,
-            "name": "Darth Vader"
-          },
-          {
-            "id": 5,
-            "name": "Leia Organa"
-          },
-          {
-            "id": 10,
-            "name": "Obi-Wan Kenobi"
-          },
-          {
-            "id": 13,
-            "name": "Chewbacca"
-          },
-          {
-            "id": 14,
-            "name": "Han Solo"
-          }
-        ],
-        "planets": [
-          {
-            "id": 1,
-            "name": "Tatooine"
-          },
-          {
-            "id": 5,
-            "name": "Dagobah"
-          },
-          {
-            "id": 7,
-            "name": "Endor"
-          },
-          {
-            "id": 8,
-            "name": "Naboo"
-          },
-          {
-            "id": 9,
-            "name": "Coruscant"
-          }
-        ],
-        "starships": [
-          {
-            "id": 2,
-            "name": "CR90 corvette"
-          },
-          {
-            "id": 3,
-            "name": "Star Destroyer"
-          },
-          {
-            "id": 10,
-            "name": "Millennium Falcon"
-          },
-          {
-            "id": 11,
-            "name": "Y-wing"
-          },
-          {
-            "id": 12,
-            "name": "X-wing"
-          },
-          {
-            "id": 15,
-            "name": "Executor"
-          }
-        ],
-        "vehicles": [
-          {
-            "id": 8,
-            "name": "TIE/LN starfighter"
-          }
-        ],
-        "species": [
-          {
-            "id": 1,
-            "name": "Human"
-          },
-          {
-            "id": 2,
-            "name": "Droid"
-          },
-          {
-            "id": 3,
-            "name": "Wookie"
-          },
-          {
-            "id": 5,
-            "name": "Hutt"
-          },
-          {
-            "id": 6,
-            "name": "Yoda's species"
-          },
-          {
-            "id": 8,
-            "name": "Mon Calamari"
-          },
-          {
-            "id": 9,
-            "name": "Ewok"
-          },
-          {
-            "id": 10,
-            "name": "Sullustan"
-          },
-          {
-            "id": 15,
-            "name": "Twi'lek"
-          }
-        ],
-        "created": "2014-12-18T10:39:33.255000Z",
-        "edited": "2014-12-20T09:48:37.462000Z"
-      },
-      {
-        "name": "The Phantom Menace",
-        "episode_id": 1,
-        "opening_crawl": "Turmoil has engulfed the\r\nGalactic Republic. The taxation\r\nof trade routes to outlying star\r\nsystems is in dispute.\r\n\r\nHoping to resolve the matter\r\nwith a blockade of deadly\r\nbattleships, the greedy Trade\r\nFederation has stopped all\r\nshipping to the small planet\r\nof Naboo.\r\n\r\nWhile the Congress of the\r\nRepublic endlessly debates\r\nthis alarming chain of events,\r\nthe Supreme Chancellor has\r\nsecretly dispatched two Jedi\r\nKnights, the guardians of\r\npeace and justice in the\r\ngalaxy, to settle the conflict....",
-        "director": "George Lucas",
-        "producer": "Rick McCallum",
-        "release_date": "1999-05-19",
-        "characters": [
-          {
-            "id": 2,
-            "name": "C-3PO"
-          },
-          {
-            "id": 3,
-            "name": "R2-D2"
-          },
-          {
-            "id": 10,
-            "name": "Obi-Wan Kenobi"
-          },
-          {
-            "id": 11,
-            "name": "Anakin Skywalker"
-          }
-        ],
-        "planets": [
-          {
-            "id": 1,
-            "name": "Tatooine"
-          },
-          {
-            "id": 8,
-            "name": "Naboo"
-          },
-          {
-            "id": 9,
-            "name": "Coruscant"
-          }
-        ],
-        "starships": [
-          {
-            "id": 10,
-            "name": "Millennium Falcon"
-          },
-          {
-            "id": 11,
-            "name": "Y-wing"
-          },
-          {
-            "id": 12,
-            "name": "X-wing"
-          }
-        ],
-        "vehicles": [
-          {
-            "id": 4,
-            "name": "Sand Crawler"
-          },
-          {
-            "id": 6,
-            "name": "T-16 skyhopper"
-          },
-          {
-            "id": 7,
-            "name": "X-34 landspeeder"
-          },
-          {
-            "id": 8,
-            "name": "TIE/LN starfighter"
-          }
-        ],
-        "species": [
-          {
-            "id": 1,
-            "name": "Human"
-          },
-          {
-            "id": 2,
-            "name": "Droid"
-          },
-          {
-            "id": 6,
-            "name": "Yoda's species"
-          },
-          {
-            "id": 11,
-            "name": "Neimodian"
-          },
-          {
-            "id": 12,
-            "name": "Gungan"
-          },
-          {
-            "id": 13,
-            "name": "Toydarian"
-          },
-          {
-            "id": 14,
-            "name": "Dug"
-          },
-          {
-            "id": 15,
-            "name": "Twi'lek"
-          }
-        ],
-        "created": "2014-12-19T16:52:55.740000Z",
-        "edited": "2014-12-20T10:54:07.216000Z"
-      },
-      {
-        "name": "Attack of the Clones",
-        "episode_id": 2,
-        "opening_crawl": "There is unrest in the Galactic\r\nSenate. Several thousand solar\r\nsystems have declared their\r\nintentions to leave the Republic.\r\n\r\nThis separatist movement,\r\nunder the leadership of the\r\nmysterious Count Dooku, has\r\nmade it difficult for the limited\r\nnumber of Jedi Knights to maintain \r\npeace and order in the galaxy.\r\n\r\nSenator Amidala, the former\r\nQueen of Naboo, is returning\r\nto the Galactic Senate to vote\r\non the critical issue of creating\r\nan ARMY OF THE REPUBLIC\r\nto assist the overwhelmed\r\nJedi....",
-        "director": "George Lucas",
-        "producer": "Rick McCallum",
-        "release_date": "2002-05-16",
-        "characters": [
-          {
-            "id": 2,
-            "name": "C-3PO"
-          },
-          {
-            "id": 3,
-            "name": "R2-D2"
-          },
-          {
-            "id": 6,
-            "name": "Owen Lars"
-          },
-          {
-            "id": 7,
-            "name": "Beru Whitesun lars"
-          },
-          {
-            "id": 10,
-            "name": "Obi-Wan Kenobi"
-          },
-          {
-            "id": 11,
-            "name": "Anakin Skywalker"
-          }
-        ],
-        "planets": [
-          {
-            "id": 1,
-            "name": "Tatooine"
-          },
-          {
-            "id": 8,
-            "name": "Naboo"
-          },
-          {
-            "id": 9,
-            "name": "Coruscant"
-          },
-          {
-            "id": 10,
-            "name": "Kamino"
-          },
-          {
-            "id": 11,
-            "name": "Geonosis"
-          }
-        ],
-        "starships": [
-          {
-            "id": 10,
-            "name": "Millennium Falcon"
-          },
-          {
-            "id": 11,
-            "name": "Y-wing"
-          },
-          {
-            "id": 12,
-            "name": "X-wing"
-          },
-          {
-            "id": 15,
-            "name": "Executor"
-          }
-        ],
-        "vehicles": [
-          {
-            "id": 4,
-            "name": "Darth Vader"
-          },
-          {
-            "id": 14,
-            "name": "Snowspeeder"
-          }
-        ],
-        "species": [
-          {
-            "id": 1,
-            "name": "Human"
-          },
-          {
-            "id": 2,
-            "name": "Droid"
-          },
-          {
-            "id": 6,
-            "name": "Yoda's species"
-          },
-          {
-            "id": 14,
-            "name": "Gungan"
-          },
-          {
-            "id": 13,
-            "name": "Toydarian"
-          },
-          {
-            "id": 15,
-            "name": "Twi'lek"
-          }
-        ],
-        "created": "2014-12-20T10:57:57.886000Z",
-        "edited": "2014-12-20T20:18:48.516000Z"
-      },
-      {
-        "name": "Revenge of the Sith",
-        "episode_id": 3,
-        "opening_crawl": "War! The Republic is crumbling\r\nunder attacks by the ruthless\r\nSith Lord, Count Dooku.\r\nThere are heroes on both sides.\r\nEvil is everywhere.\r\n\r\nIn a stunning move, the\r\nfiendish droid leader, General\r\nGrievous, has swept into the\r\nRepublic capital and kidnapped\r\nChancellor Palpatine, leader of\r\nthe Galactic Senate.\r\n\r\nAs the Separatist Droid Army\r\nattempts to flee the besieged\r\ncapital with their valuable\r\nhostage, two Jedi Knights lead a\r\ndesperate mission to rescue the\r\ncaptive Chancellor....",
-        "director": "George Lucas",
-        "producer": "Rick McCallum",
-        "release_date": "2005-05-19",
-        "characters": [
-          {
-            "id": 1,
-            "name": "Luke Skywalker"
-          },
-          {
-            "id": 2,
-            "name": "C-3PO"
-          },
-          {
-            "id": 3,
-            "name": "R2-D2"
-          },
-          {
-            "id": 4,
-            "name": "Darth Vader"
-          },
-          {
-            "id": 5,
-            "name": "Leia Organa"
-          },
-          {
-            "id": 6,
-            "name": "Owen Lars"
-          },
-          {
-            "id": 7,
-            "name": "Beru Whitesun lars"
-          },
-          {
-            "id": 10,
-            "name": "Obi-Wan Kenobi"
-          },
-          {
-            "id": 12,
-            "name": "Wilhuff Tarkin"
-          },
-          {
-            "id": 13,
-            "name": "Chewbacca"
-          }
-        ],
-        "planets": [
-          {
-            "id": 4,
-            "name": "Hoth"
-          },
-          {
-            "id": 5,
-            "name": "Dagobah"
-          },
-          {
-            "id": 6,
-            "name": "Bespin"
-          }
-        ],
-        "starships": [
-          {
-            "id": 9,
-            "name": "Death Star"
-          },
-          {
-            "id": 10,
-            "name": "Millennium Falcon"
-          },
-          {
-            "id": 11,
-            "name": "Y-wing"
-          },
-          {
-            "id": 12,
-            "name": "X-wing"
-          }
-        ],
-        "vehicles": [],
-        "species": [
-          {
-            "id": 2,
-            "name": "Droid"
-          },
-          {
-            "id": 6,
-            "name": "Yoda's species"
-          },
-          {
-            "id": 11,
-            "name": "Neimodian"
-          },
-          {
-            "id": 12,
-            "name": "Gungan"
-          },
-          {
-            "id": 13,
-            "name": "Toydarian"
-          }
-        ],
-        "created": "2014-12-20T18:49:38.403000Z",
-        "edited": "2014-12-20T20:47:52.073000Z"
-      }
-
+    {
+      "name": "A New Hope",
+      "episode_id": 4,
+      "opening_crawl": "It is a period of civil war.\r\nRebel spaceships, striking\r\nfrom a hidden base, have won\r\ntheir first victory against\r\nthe evil Galactic Empire.\r\n\r\nDuring the battle, Rebel\r\nspies managed to steal secret\r\nplans to the Empire's\r\nultimate weapon, the DEATH\r\nSTAR, an armored space\r\nstation with enough power\r\nto destroy an entire planet.\r\n\r\nPursued by the Empire's\r\nsinister agents, Princess\r\nLeia races home aboard her\r\nstarship, custodian of the\r\nstolen plans that can save her\r\npeople and restore\r\nfreedom to the galaxy....",
+      "director": "George Lucas",
+      "producer": "Gary Kurtz, Rick McCallum",
+      "release_date": "1977-05-25",
+      "characters": [
+        {
+          "id": 1,
+          "name": "Luke Skywalker"
+        },
+        {
+          "id": 2,
+          "name": "C-3PO"
+        },
+        {
+          "id": 3,
+          "name": "R2-D2"
+        },
+        {
+          "id": 4,
+          "name": "Darth Vader"
+        },
+        {
+          "id": 5,
+          "name": "Leia Organa"
+        },
+        {
+          "id": 6,
+          "name": "Owen Lars"
+        },
+        {
+          "id": 7,
+          "name": "Beru Whitesun lars"
+        },
+        {
+          "id": 8,
+          "name": "R5-D4"
+        },
+        {
+          "id": 9,
+          "name": "Biggs Darklighter"
+        },
+        {
+          "id": 10,
+          "name": "Obi-Wan Kenobi"
+        },
+        {
+          "id": 12,
+          "name": "Wilhuff Tarkin"
+        },
+        {
+          "id": 13,
+          "name": "Chewbacca"
+        },
+        {
+          "id": 14,
+          "name": "Han Solo"
+        },
+        {
+          "id": 15,
+          "name": "Greedo"
+        }
+      ],
+      "planets": [
+        {
+          "id": 1,
+          "name": "Tatooine"
+        },
+        {
+          "id": 2,
+          "name": "Alderaan"
+        },
+        {
+          "id": 3,
+          "name": "Yavin IV"
+        }
+      ],
+      "starships": [
+        {
+          "id": 2,
+          "name": "CR90 corvette"
+        },
+        {
+          "id": 3,
+          "name": "Star Destroyer"
+        },
+        {
+          "id": 5,
+          "name": "Sentinel-class landing craft"
+        },
+        {
+          "id": 9,
+          "name": "Death Star"
+        },
+        {
+          "id": 10,
+          "name": "Millennium Falcon"
+        },
+        {
+          "id": 11,
+          "name": "Y-wing"
+        },
+        {
+          "id": 12,
+          "name": "X-wing"
+        },
+        {
+          "id": 13,
+          "name": "TIE Advanced x1"
+        }
+      ],
+      "vehicles": [
+        {
+          "id": 4,
+          "name": "Sand Crawler"
+        },
+        {
+          "id": 6,
+          "name": "T-16 skyhopper"
+        },
+        {
+          "id": 7,
+          "name": "X-34 landspeeder"
+        },
+        {
+          "id": 8,
+          "name": "TIE/LN starfighter"
+        }
+      ],
+      "species": [
+        {
+          "id": 1,
+          "name": "Human"
+        },
+        {
+          "id": 2,
+          "name": "Droid"
+        },
+        {
+          "id": 3,
+          "name": "Wookie"
+        },
+        {
+          "id": 4,
+          "name": "Rodian"
+        },
+        {
+          "id": 5,
+          "name": "Hutt"
+        }
+      ],
+      "created": "2014-12-10T14:23:31.880000Z",
+      "edited": "2014-12-20T19:49:45.256000Z"
+    },
+    {
+      "name": "The Empire Strikes Back",
+      "episode_id": 5,
+      "opening_crawl": "It is a dark time for the\r\nRebellion. Although the Death\r\nStar has been destroyed,\r\nImperial troops have driven the\r\nRebel forces from their hidden\r\nbase and pursued them across\r\nthe galaxy.\r\n\r\nEvading the dreaded Imperial\r\nStarfleet, a group of freedom\r\nfighters led by Luke Skywalker\r\nhas established a new secret\r\nbase on the remote ice world\r\nof Hoth.\r\n\r\nThe evil lord Darth Vader,\r\nobsessed with finding young\r\nSkywalker, has dispatched\r\nthousands of remote probes into\r\nthe far reaches of space....",
+      "director": "Irvin Kershner",
+      "producer": "Gary Kurtz, Rick McCallum",
+      "release_date": "1980-05-17",
+      "characters": [
+        {
+          "id": 1,
+          "name": "Luke Skywalker"
+        },
+        {
+          "id": 2,
+          "name": "C-3PO"
+        },
+        {
+          "id": 3,
+          "name": "R2-D2"
+        },
+        {
+          "id": 4,
+          "name": "Darth Vader"
+        },
+        {
+          "id": 5,
+          "name": "Leia Organa"
+        },
+        {
+          "id": 10,
+          "name": "Obi-Wan Kenobi"
+        },
+        {
+          "id": 13,
+          "name": "Chewbacca"
+        },
+        {
+          "id": 14,
+          "name": "Han Solo"
+        },
+        {
+          "id": 18,
+          "name": "Wedge Antilles"
+        },
+        {
+          "id": 20,
+          "name": "Yoda"
+        },
+        {
+          "id": 21,
+          "name": "Palpatine"
+        },
+        {
+          "id": 22,
+          "name": "Boba Fett"
+        },
+        {
+          "id": 23,
+          "name": "IG-88"
+        },
+        {
+          "id": 24,
+          "name": "Bossk"
+        },
+        {
+          "id": 25,
+          "name": "Lando Calrissian"
+        },
+        {
+          "id": 26,
+          "name": "Lobot"
+        }
+      ],
+      "planets": [
+        {
+          "id": 4,
+          "name": "Hoth"
+        },
+        {
+          "id": 5,
+          "name": "Dagobah"
+        },
+        {
+          "id": 6,
+          "name": "Bespin"
+        },
+        {
+          "id": 27,
+          "name": "Ord Mantell"
+        }
+      ],
+      "starships": [
+        {
+          "id": 3,
+          "name": "Star Destroyer"
+        },
+        {
+          "id": 10,
+          "name": "Millennium Falcon"
+        },
+        {
+          "id": 11,
+          "name": "Y-wing"
+        },
+        {
+          "id": 12,
+          "name": "X-wing"
+        },
+        {
+          "id": 15,
+          "name": "Executor"
+        },
+        {
+          "id": 17,
+          "name": "Rebel transport"
+        },
+        {
+          "id": 21,
+          "name": "Slave 1"
+        },
+        {
+          "id": 22,
+          "name": "Imperial shuttle"
+        },
+        {
+          "id": 23,
+          "name": "EF76 Nebulon-B escort frigate"
+        }
+      ],
+      "vehicles": [
+        {
+          "id": 8,
+          "name": "TIE/LN starfighter"
+        },
+        {
+          "id": 14,
+          "name": "Snowspeeder"
+        },
+        {
+          "id": 4,
+          "name": "Sand Crawler"
+        },
+        {
+          "id": 6,
+          "name": "T-16 skyhopper"
+        },
+        {
+          "id": 7,
+          "name": "X-34 landspeeder"
+        },
+        {
+          "id": 8,
+          "name": "TIE/LN starfighter"
+        }
+      ],
+      "species": [
+        {
+          "id": 1,
+          "name": "Human"
+        },
+        {
+          "id": 2,
+          "name": "Droid"
+        },
+        {
+          "id": 3,
+          "name": "Wookie"
+        },
+        {
+          "id": 6,
+          "name": "Yoda's species"
+        },
+        {
+          "id": 7,
+          "name": "Trandoshan"
+        }
+      ],
+      "created": "2014-12-12T11:26:24.656000Z",
+      "edited": "2014-12-15T13:07:53.386000Z"
+    },
+    {
+      "name": "Return of the Jedi",
+      "episode_id": 6,
+      "opening_crawl": "Luke Skywalker has returned to\r\nhis home planet of Tatooine in\r\nan attempt to rescue his\r\nfriend Han Solo from the\r\nclutches of the vile gangster\r\nJabba the Hutt.\r\n\r\nLittle does Luke know that the\r\nGALACTIC EMPIRE has secretly\r\nbegun construction on a new\r\narmored space station even\r\nmore powerful than the first\r\ndreaded Death Star.\r\n\r\nWhen completed, this ultimate\r\nweapon will spell certain doom\r\nfor the small band of rebels\r\nstruggling to restore freedom\r\nto the galaxy...",
+      "director": "Richard Marquand",
+      "producer": "Howard G. Kazanjian, George Lucas, Rick McCallum",
+      "release_date": "1983-05-25",
+      "characters": [
+        {
+          "id": 1,
+          "name": "Luke Skywalker"
+        },
+        {
+          "id": 2,
+          "name": "C-3PO"
+        },
+        {
+          "id": 3,
+          "name": "R2-D2"
+        },
+        {
+          "id": 4,
+          "name": "Darth Vader"
+        },
+        {
+          "id": 5,
+          "name": "Leia Organa"
+        },
+        {
+          "id": 10,
+          "name": "Obi-Wan Kenobi"
+        },
+        {
+          "id": 13,
+          "name": "Chewbacca"
+        },
+        {
+          "id": 14,
+          "name": "Han Solo"
+        }
+      ],
+      "planets": [
+        {
+          "id": 1,
+          "name": "Tatooine"
+        },
+        {
+          "id": 5,
+          "name": "Dagobah"
+        },
+        {
+          "id": 7,
+          "name": "Endor"
+        },
+        {
+          "id": 8,
+          "name": "Naboo"
+        },
+        {
+          "id": 9,
+          "name": "Coruscant"
+        }
+      ],
+      "starships": [
+        {
+          "id": 2,
+          "name": "CR90 corvette"
+        },
+        {
+          "id": 3,
+          "name": "Star Destroyer"
+        },
+        {
+          "id": 10,
+          "name": "Millennium Falcon"
+        },
+        {
+          "id": 11,
+          "name": "Y-wing"
+        },
+        {
+          "id": 12,
+          "name": "X-wing"
+        },
+        {
+          "id": 15,
+          "name": "Executor"
+        }
+      ],
+      "vehicles": [
+        {
+          "id": 8,
+          "name": "TIE/LN starfighter"
+        }
+      ],
+      "species": [
+        {
+          "id": 1,
+          "name": "Human"
+        },
+        {
+          "id": 2,
+          "name": "Droid"
+        },
+        {
+          "id": 3,
+          "name": "Wookie"
+        },
+        {
+          "id": 5,
+          "name": "Hutt"
+        },
+        {
+          "id": 6,
+          "name": "Yoda's species"
+        },
+        {
+          "id": 8,
+          "name": "Mon Calamari"
+        },
+        {
+          "id": 9,
+          "name": "Ewok"
+        },
+        {
+          "id": 10,
+          "name": "Sullustan"
+        },
+        {
+          "id": 15,
+          "name": "Twi'lek"
+        }
+      ],
+      "created": "2014-12-18T10:39:33.255000Z",
+      "edited": "2014-12-20T09:48:37.462000Z"
+    },
+    {
+      "name": "The Phantom Menace",
+      "episode_id": 1,
+      "opening_crawl": "Turmoil has engulfed the\r\nGalactic Republic. The taxation\r\nof trade routes to outlying star\r\nsystems is in dispute.\r\n\r\nHoping to resolve the matter\r\nwith a blockade of deadly\r\nbattleships, the greedy Trade\r\nFederation has stopped all\r\nshipping to the small planet\r\nof Naboo.\r\n\r\nWhile the Congress of the\r\nRepublic endlessly debates\r\nthis alarming chain of events,\r\nthe Supreme Chancellor has\r\nsecretly dispatched two Jedi\r\nKnights, the guardians of\r\npeace and justice in the\r\ngalaxy, to settle the conflict....",
+      "director": "George Lucas",
+      "producer": "Rick McCallum",
+      "release_date": "1999-05-19",
+      "characters": [
+        {
+          "id": 2,
+          "name": "C-3PO"
+        },
+        {
+          "id": 3,
+          "name": "R2-D2"
+        },
+        {
+          "id": 10,
+          "name": "Obi-Wan Kenobi"
+        },
+        {
+          "id": 11,
+          "name": "Anakin Skywalker"
+        }
+      ],
+      "planets": [
+        {
+          "id": 1,
+          "name": "Tatooine"
+        },
+        {
+          "id": 8,
+          "name": "Naboo"
+        },
+        {
+          "id": 9,
+          "name": "Coruscant"
+        }
+      ],
+      "starships": [
+        {
+          "id": 10,
+          "name": "Millennium Falcon"
+        },
+        {
+          "id": 11,
+          "name": "Y-wing"
+        },
+        {
+          "id": 12,
+          "name": "X-wing"
+        }
+      ],
+      "vehicles": [
+        {
+          "id": 4,
+          "name": "Sand Crawler"
+        },
+        {
+          "id": 6,
+          "name": "T-16 skyhopper"
+        },
+        {
+          "id": 7,
+          "name": "X-34 landspeeder"
+        },
+        {
+          "id": 8,
+          "name": "TIE/LN starfighter"
+        }
+      ],
+      "species": [
+        {
+          "id": 1,
+          "name": "Human"
+        },
+        {
+          "id": 2,
+          "name": "Droid"
+        },
+        {
+          "id": 6,
+          "name": "Yoda's species"
+        },
+        {
+          "id": 11,
+          "name": "Neimodian"
+        },
+        {
+          "id": 12,
+          "name": "Gungan"
+        },
+        {
+          "id": 13,
+          "name": "Toydarian"
+        },
+        {
+          "id": 14,
+          "name": "Dug"
+        },
+        {
+          "id": 15,
+          "name": "Twi'lek"
+        }
+      ],
+      "created": "2014-12-19T16:52:55.740000Z",
+      "edited": "2014-12-20T10:54:07.216000Z"
+    },
+    {
+      "name": "Attack of the Clones",
+      "episode_id": 2,
+      "opening_crawl": "There is unrest in the Galactic\r\nSenate. Several thousand solar\r\nsystems have declared their\r\nintentions to leave the Republic.\r\n\r\nThis separatist movement,\r\nunder the leadership of the\r\nmysterious Count Dooku, has\r\nmade it difficult for the limited\r\nnumber of Jedi Knights to maintain \r\npeace and order in the galaxy.\r\n\r\nSenator Amidala, the former\r\nQueen of Naboo, is returning\r\nto the Galactic Senate to vote\r\non the critical issue of creating\r\nan ARMY OF THE REPUBLIC\r\nto assist the overwhelmed\r\nJedi....",
+      "director": "George Lucas",
+      "producer": "Rick McCallum",
+      "release_date": "2002-05-16",
+      "characters": [
+        {
+          "id": 2,
+          "name": "C-3PO"
+        },
+        {
+          "id": 3,
+          "name": "R2-D2"
+        },
+        {
+          "id": 6,
+          "name": "Owen Lars"
+        },
+        {
+          "id": 7,
+          "name": "Beru Whitesun lars"
+        },
+        {
+          "id": 10,
+          "name": "Obi-Wan Kenobi"
+        },
+        {
+          "id": 11,
+          "name": "Anakin Skywalker"
+        }
+      ],
+      "planets": [
+        {
+          "id": 1,
+          "name": "Tatooine"
+        },
+        {
+          "id": 8,
+          "name": "Naboo"
+        },
+        {
+          "id": 9,
+          "name": "Coruscant"
+        },
+        {
+          "id": 10,
+          "name": "Kamino"
+        },
+        {
+          "id": 11,
+          "name": "Geonosis"
+        }
+      ],
+      "starships": [
+        {
+          "id": 10,
+          "name": "Millennium Falcon"
+        },
+        {
+          "id": 11,
+          "name": "Y-wing"
+        },
+        {
+          "id": 12,
+          "name": "X-wing"
+        },
+        {
+          "id": 15,
+          "name": "Executor"
+        }
+      ],
+      "vehicles": [
+        {
+          "id": 4,
+          "name": "Darth Vader"
+        },
+        {
+          "id": 14,
+          "name": "Snowspeeder"
+        }
+      ],
+      "species": [
+        {
+          "id": 1,
+          "name": "Human"
+        },
+        {
+          "id": 2,
+          "name": "Droid"
+        },
+        {
+          "id": 6,
+          "name": "Yoda's species"
+        },
+        {
+          "id": 14,
+          "name": "Gungan"
+        },
+        {
+          "id": 13,
+          "name": "Toydarian"
+        },
+        {
+          "id": 15,
+          "name": "Twi'lek"
+        }
+      ],
+      "created": "2014-12-20T10:57:57.886000Z",
+      "edited": "2014-12-20T20:18:48.516000Z"
+    },
+    {
+      "name": "Revenge of the Sith",
+      "episode_id": 3,
+      "opening_crawl": "War! The Republic is crumbling\r\nunder attacks by the ruthless\r\nSith Lord, Count Dooku.\r\nThere are heroes on both sides.\r\nEvil is everywhere.\r\n\r\nIn a stunning move, the\r\nfiendish droid leader, General\r\nGrievous, has swept into the\r\nRepublic capital and kidnapped\r\nChancellor Palpatine, leader of\r\nthe Galactic Senate.\r\n\r\nAs the Separatist Droid Army\r\nattempts to flee the besieged\r\ncapital with their valuable\r\nhostage, two Jedi Knights lead a\r\ndesperate mission to rescue the\r\ncaptive Chancellor....",
+      "director": "George Lucas",
+      "producer": "Rick McCallum",
+      "release_date": "2005-05-19",
+      "characters": [
+        {
+          "id": 1,
+          "name": "Luke Skywalker"
+        },
+        {
+          "id": 2,
+          "name": "C-3PO"
+        },
+        {
+          "id": 3,
+          "name": "R2-D2"
+        },
+        {
+          "id": 4,
+          "name": "Darth Vader"
+        },
+        {
+          "id": 5,
+          "name": "Leia Organa"
+        },
+        {
+          "id": 6,
+          "name": "Owen Lars"
+        },
+        {
+          "id": 7,
+          "name": "Beru Whitesun lars"
+        },
+        {
+          "id": 10,
+          "name": "Obi-Wan Kenobi"
+        },
+        {
+          "id": 12,
+          "name": "Wilhuff Tarkin"
+        },
+        {
+          "id": 13,
+          "name": "Chewbacca"
+        }
+      ],
+      "planets": [
+        {
+          "id": 4,
+          "name": "Hoth"
+        },
+        {
+          "id": 5,
+          "name": "Dagobah"
+        },
+        {
+          "id": 6,
+          "name": "Bespin"
+        }
+      ],
+      "starships": [
+        {
+          "id": 9,
+          "name": "Death Star"
+        },
+        {
+          "id": 10,
+          "name": "Millennium Falcon"
+        },
+        {
+          "id": 11,
+          "name": "Y-wing"
+        },
+        {
+          "id": 12,
+          "name": "X-wing"
+        }
+      ],
+      "vehicles": [],
+      "species": [
+        {
+          "id": 2,
+          "name": "Droid"
+        },
+        {
+          "id": 6,
+          "name": "Yoda's species"
+        },
+        {
+          "id": 11,
+          "name": "Neimodian"
+        },
+        {
+          "id": 12,
+          "name": "Gungan"
+        },
+        {
+          "id": 13,
+          "name": "Toydarian"
+        }
+      ],
+      "created": "2014-12-20T18:49:38.403000Z",
+      "edited": "2014-12-20T20:47:52.073000Z"
+    }
   ],
   "species": [
     {
-      "name": "species"
+      "name": "Human",
+      "classification": "mammal",
+      "designation": "sentient",
+      "average_height": "180",
+      "skin_colors": "caucasian, black, asian, hispanic",
+      "hair_colors": "blonde, brown, black, red",
+      "eye_colors": "brown, blue, green, hazel, grey, amber",
+      "average_lifespan": "120",
+      "homeworld": [
+        {
+          "id": 9,
+          "name": "Coruscant"
+        }
+      ],
+      "language": "Galactic Basic",
+      "people": [
+        {
+          "id": 6,
+          "name": "Owen Lars"
+        },
+        {
+          "id": 7,
+          "name": "Beru Whitesun lars"
+        },
+        {
+          "id": 8,
+          "name": "R5-D4"
+        },
+        {
+          "id": 4,
+          "name": "Darth Vader"
+        }
+      ],
+      "films": [
+        {
+          "id": 1,
+          "name": "The Phantom Menace"
+        },
+        {
+          "id": 2,
+          "name": "Attack of the Clones"
+        },
+        {
+          "id": 3,
+          "name": "Revenge of the Sith"
+        },
+        {
+          "id": 4,
+          "name": "A New Hope"
+        },
+        {
+          "id": 5,
+          "name": "The Empire Strikes Back"
+        },
+        {
+          "id": 6,
+          "name": "Return of the Jedi"
+        }
+      ],
+      "created": "2014-12-10T13:52:11.567000Z",
+      "edited": "2014-12-20T21:36:42.136000Z"
+    },
+    {
+      "name": "Droid",
+      "classification": "artificial",
+      "designation": "sentient",
+      "average_height": "n/a",
+      "skin_colors": "n/a",
+      "hair_colors": "n/a",
+      "eye_colors": "n/a",
+      "average_lifespan": "indefinite",
+      "homeworld": null,
+      "language": "n/a",
+      "people": [
+        {
+          "id": 2,
+          "name": "C-3PO"
+        },
+        {
+          "id": 3,
+          "name": "R2-D2"
+        },
+        {
+          "id": 8,
+          "name": "R5-D4"
+        },
+        {
+          "id": 9,
+          "name": "Biggs Darklighter"
+        }
+      ],
+      "films": [
+        {
+          "id": 1,
+          "name": "The Phantom Menace"
+        },
+        {
+          "id": 2,
+          "name": "Attack of the Clones"
+        },
+        {
+          "id": 3,
+          "name": "Revenge of the Sith"
+        },
+        {
+          "id": 4,
+          "name": "A New Hope"
+        },
+        {
+          "id": 5,
+          "name": "The Empire Strikes Back"
+        },
+        {
+          "id": 6,
+          "name": "Return of the Jedi"
+        }
+      ],
+      "created": "2014-12-10T15:16:16.259000Z",
+      "edited": "2014-12-20T21:36:42.139000Z"
+    },
+    {
+      "name": "Wookie",
+      "classification": "mammal",
+      "designation": "sentient",
+      "average_height": "210",
+      "skin_colors": "gray",
+      "hair_colors": "black, brown",
+      "eye_colors": "blue, green, yellow, brown, golden, red",
+      "average_lifespan": "400",
+      "homeworld": [
+        {
+          "id": 14,
+          "name": "Kashyyyk"
+        }
+      ],
+      "language": "Shyriiwook",
+      "people": [
+        {
+          "id": 13,
+          "name": "Chewbacca"
+        },
+        {
+          "id": 14,
+          "name": "Han Solo"
+        }
+      ],
+      "films": [
+        {
+          "id": 1,
+          "name": "The Phantom Menace"
+        },
+        {
+          "id": 2,
+          "name": "Attack of the Clones"
+        },
+        {
+          "id": 3,
+          "name": "Revenge of the Sith"
+        },
+        {
+          "id": 6,
+          "name": "Return of the Jedi"
+        }
+      ],
+      "created": "2014-12-10T16:44:31.486000Z",
+      "edited": "2014-12-20T21:36:42.142000Z"
+    },
+    {
+      "name": "Rodian",
+      "classification": "sentient",
+      "designation": "reptilian",
+      "average_height": "170",
+      "skin_colors": "green, blue",
+      "hair_colors": "n/a",
+      "eye_colors": "black",
+      "average_lifespan": "unknown",
+      "homeworld": [
+        {
+          "id": 7,
+          "name": "Endor"
+        }
+      ],
+      "language": "Galatic Basic",
+      "people": [
+        {
+          "id": 15,
+          "name": "Greedo"
+        }
+      ],
+      "films": [
+        {
+          "id": 1,
+          "name": "The Phantom Menace"
+        }
+      ],
+      "created": "2014-12-10T17:05:26.471000Z",
+      "edited": "2014-12-20T21:36:42.144000Z"
+    },
+    {
+      "name": "Hutt",
+      "classification": "gastropod",
+      "designation": "sentient",
+      "average_height": "300",
+      "skin_colors": "green, brown, tan",
+      "hair_colors": "n/a",
+      "eye_colors": "yellow, red",
+      "average_lifespan": "1000",
+      "homeworld": [
+        {
+          "id": 7,
+          "name": "Endor"
+        }
+      ],
+      "language": "Huttese",
+      "people": [
+        "https://swapi.dev/api/people/16/"
+      ],
+      "films": [
+        {
+          "id": 1,
+          "name": "The Phantom Menace"
+        },
+        {
+          "id": 3,
+          "name": "Revenge of the Sith"
+        }
+      ],
+      "created": "2014-12-10T17:12:50.410000Z",
+      "edited": "2014-12-20T21:36:42.146000Z"
+    },
+    {
+      "name": "Yoda's species",
+      "classification": "mammal",
+      "designation": "sentient",
+      "average_height": "66",
+      "skin_colors": "green, yellow",
+      "hair_colors": "brown, white",
+      "eye_colors": "brown, green, yellow",
+      "average_lifespan": "900",
+      "homeworld": [
+        {
+          "id": 7,
+          "name": "Endor"
+        }
+      ],
+      "language": "Galactic basic",
+      "people": [
+        {
+          "id": 10,
+          "name": "Obi-Wan Kenobi"
+        }
+      ],
+      "films": [
+        {
+          "id": 2,
+          "name": "Attack of the Clones"
+        },
+        {
+          "id": 3,
+          "name": "Revenge of the Sith"
+        },
+        {
+          "id": 4,
+          "name": "A New Hope"
+        },
+        {
+          "id": 5,
+          "name": "The Empire Strikes Back"
+        },
+        {
+          "id": 6,
+          "name": "Return of the Jedi"
+        }
+      ],
+      "created": "2014-12-15T12:27:22.877000Z",
+      "edited": "2014-12-20T21:36:42.148000Z"
+    },
+    {
+      "name": "Trandoshan",
+      "classification": "reptile",
+      "designation": "sentient",
+      "average_height": "200",
+      "skin_colors": "brown, green",
+      "hair_colors": "none",
+      "eye_colors": "yellow, orange",
+      "average_lifespan": "unknown",
+      "homeworld": [
+        {
+          "id": 7,
+          "name": "Endor"
+        }
+      ],
+      "language": "Dosh",
+      "people": [
+        {
+          "id": 11,
+          "name": "Anakin Skywalker"
+        }
+      ],
+      "films": [
+        {
+          "id": 2,
+          "name": "Attack of the Clones"
+        }
+      ],
+      "created": "2014-12-15T13:07:47.704000Z",
+      "edited": "2014-12-20T21:36:42.151000Z"
+    },
+    {
+      "name": "Mon Calamari",
+      "classification": "amphibian",
+      "designation": "sentient",
+      "average_height": "160",
+      "skin_colors": "red, blue, brown, magenta",
+      "hair_colors": "none",
+      "eye_colors": "yellow",
+      "average_lifespan": "unknown",
+      "homeworld": [
+        {
+          "id": 7,
+          "name": "Endor"
+        }
+      ],
+      "language": "Mon Calamarian",
+      "people": [
+        {
+          "id": 7,
+          "name": "Beru Whitesun lars"
+        }
+      ],
+      "films": [
+        {
+          "id": 3,
+          "name": "Revenge of the Sith"
+        }
+      ],
+      "created": "2014-12-18T11:09:52.263000Z",
+      "edited": "2014-12-20T21:36:42.153000Z"
+    },
+    {
+      "name": "Ewok",
+      "classification": "mammal",
+      "designation": "sentient",
+      "average_height": "100",
+      "skin_colors": "brown",
+      "hair_colors": "white, brown, black",
+      "eye_colors": "orange, brown",
+      "average_lifespan": "unknown",
+      "homeworld": [
+        {
+          "id": 7,
+          "name": "Endor"
+        }
+      ],
+      "language": "Ewokese",
+      "people": [
+        {
+          "id": 5,
+          "name": "Leia Organa"
+        }
+      ],
+      "films": [
+        {
+          "id": 3,
+          "name": "Revenge of the Sith"
+        }
+      ],
+      "created": "2014-12-18T11:22:00.285000Z",
+      "edited": "2014-12-20T21:36:42.155000Z"
+    },
+    {
+      "name": "Sullustan",
+      "classification": "mammal",
+      "designation": "sentient",
+      "average_height": "180",
+      "skin_colors": "pale",
+      "hair_colors": "none",
+      "eye_colors": "black",
+      "average_lifespan": "unknown",
+      "homeworld": [
+        {
+          "id": 8,
+          "name": "Naboo"
+        }
+      ],
+      "language": "Sullutese",
+      "people": [
+        {
+          "id": 4,
+          "name": "Darth Vader"
+        }
+      ],
+      "films": [
+        {
+          "id": 3,
+          "name": "Revenge of the Sith"
+        }
+      ],
+      "created": "2014-12-18T11:26:20.103000Z",
+      "edited": "2014-12-20T21:36:42.157000Z"
+    },
+    {
+      "name": "Neimodian",
+      "classification": "unknown",
+      "designation": "sentient",
+      "average_height": "180",
+      "skin_colors": "grey, green",
+      "hair_colors": "none",
+      "eye_colors": "red, pink",
+      "average_lifespan": "unknown",
+      "homeworld": [
+        {
+          "id": 8,
+          "name": "Naboo"
+        }
+      ],
+      "language": "Neimoidia",
+      "people": [
+        {
+          "id": 3,
+          "name": "R2-D2"
+        }
+      ],
+      "films": [
+        {
+          "id": 4,
+          "name": "A New Hope"
+        }
+      ],
+      "created": "2014-12-19T17:07:31.319000Z",
+      "edited": "2014-12-20T21:36:42.160000Z"
+    },
+    {
+      "name": "Gungan",
+      "classification": "amphibian",
+      "designation": "sentient",
+      "average_height": "190",
+      "skin_colors": "brown, green",
+      "hair_colors": "none",
+      "eye_colors": "orange",
+      "average_lifespan": "unknown",
+      "homeworld": [
+        {
+          "id": 8,
+          "name": "Naboo"
+        }
+      ],
+      "language": "Gungan basic",
+      "people": [
+        {
+          "id": 6,
+          "name": "Owen Lars"
+        },
+        {
+          "id": 7,
+          "name": "Beru Whitesun lars"
+        },
+        {
+          "id": 8,
+          "name": "R5-D4"
+        }
+      ],
+      "films": [
+        {
+          "id": 4,
+          "name": "A New Hope"
+        },
+        {
+          "id": 5,
+          "name": "The Empire Strikes Back"
+        }
+      ],
+      "created": "2014-12-19T17:30:37.341000Z",
+      "edited": "2014-12-20T21:36:42.163000Z"
+    },
+    {
+      "name": "Toydarian",
+      "classification": "mammal",
+      "designation": "sentient",
+      "average_height": "120",
+      "skin_colors": "blue, green, grey",
+      "hair_colors": "none",
+      "eye_colors": "yellow",
+      "average_lifespan": "91",
+      "homeworld": [
+        {
+          "id": 4,
+          "name": "Hoth"
+        }
+      ],
+      "language": "Toydarian",
+      "people": [
+        {
+          "id": 9,
+          "name": "Biggs Darklighter"
+        }
+      ],
+      "films": [
+        {
+          "id": 4,
+          "name": "A New Hope"
+        },
+        {
+          "id": 5,
+          "name": "The Empire Strikes Back"
+        }
+      ],
+      "created": "2014-12-19T17:48:56.893000Z",
+      "edited": "2014-12-20T21:36:42.165000Z"
+    },
+    {
+      "name": "Dug",
+      "classification": "mammal",
+      "designation": "sentient",
+      "average_height": "100",
+      "skin_colors": "brown, purple, grey, red",
+      "hair_colors": "none",
+      "eye_colors": "yellow, blue",
+      "average_lifespan": "unknown",
+      "homeworld": [
+        {
+          "id": 5,
+          "name": "Dagobah"
+        }
+      ],
+      "language": "Dugese",
+      "people": [
+        {
+          "id": 10,
+          "name": "Obi-Wan Kenobi"
+        }
+      ],
+      "films": [
+        {
+          "id": 4,
+          "name": "A New Hope"
+        }
+      ],
+      "created": "2014-12-19T17:53:11.214000Z",
+      "edited": "2014-12-20T21:36:42.167000Z"
+    },
+    {
+      "name": "Twi'lek",
+      "classification": "mammals",
+      "designation": "sentient",
+      "average_height": "200",
+      "skin_colors": "orange, yellow, blue, green, pink, purple, tan",
+      "hair_colors": "none",
+      "eye_colors": "blue, brown, orange, pink",
+      "average_lifespan": "unknown",
+      "homeworld": [
+        {
+          "id": 7,
+          "name": "Endor"
+        }
+      ],
+      "language": "Twi'leki",
+      "people": [
+        {
+          "id": 10,
+          "name": "Obi-Wan Kenobi"
+        },
+        {
+          "id": 12,
+          "name": "Wilhuff Tarkin"
+        }
+      ],
+      "films": [
+        {
+          "id": 3,
+          "name": "Revenge of the Sith"
+        },
+        {
+          "id": 4,
+          "name": "A New Hope"
+        },
+        {
+          "id": 5,
+          "name": "The Empire Strikes Back"
+        },
+        {
+          "id": 6,
+          "name": "Return of the Jedi"
+        }
+      ],
+      "created": "2014-12-20T09:48:02.406000Z",
+      "edited": "2014-12-20T21:36:42.169000Z"
     }
   ],
   "vehicles": [
