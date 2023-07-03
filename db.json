@@ -46,8 +46,14 @@
         }
       ],
       "starships": [
-        { "id": 12, "name": "X-wing'"},
-        { "id": 6, "name": "Imperial shuttle'"}
+        {
+          "id": 12,
+          "name": "X-wing'"
+        },
+        {
+          "id": 6,
+          "name": "Imperial shuttle'"
+        }
       ],
       "created": "2014-12-09T13:50:51.644000Z",
       "edited": "2014-12-20T21:17:56.891000Z"
@@ -95,7 +101,10 @@
         }
       ],
       "species": [
-        { "id": 2, "name": "Droid'"}
+        {
+          "id": 2,
+          "name": "Droid'"
+        }
       ],
       "vehicles": [],
       "starships": [],
@@ -145,7 +154,10 @@
         }
       ],
       "species": [
-        { "id": 2, "name": "Droid'"}
+        {
+          "id": 2,
+          "name": "Droid'"
+        }
       ],
       "vehicles": [],
       "starships": [],
@@ -189,7 +201,10 @@
       "species": [],
       "vehicles": [],
       "starships": [
-        { "id": 13, "name": "TIE Advanced x1'"}
+        {
+          "id": 13,
+          "name": "TIE Advanced x1'"
+        }
       ],
       "created": "2014-12-10T15:18:20.704000Z",
       "edited": "2014-12-20T21:17:50.313000Z"
@@ -334,7 +349,10 @@
         }
       ],
       "species": [
-        { "id": 2, "name": "Droid'"}
+        {
+          "id": 2,
+          "name": "Droid'"
+        }
       ],
       "vehicles": [],
       "starships": [],
@@ -366,7 +384,10 @@
       "species": [],
       "vehicles": [],
       "starships": [
-        { "id": 12, "name": "X-wing'"}
+        {
+          "id": 12,
+          "name": "X-wing'"
+        }
       ],
       "created": "2014-12-10T15:59:50.509000Z",
       "edited": "2014-12-20T21:17:50.323000Z"
@@ -415,14 +436,32 @@
       ],
       "species": [],
       "vehicles": [
-        { "id": 15, "name": "Multi-Troop Transport'"}
+        {
+          "id": 15,
+          "name": "Multi-Troop Transport'"
+        }
       ],
       "starships": [
-        { "id": 14, "name": "A-wing'"},
-        { "id": 15, "name": "Executor'"},
-        { "id": 8, "name": "Calamari Cruiser'"},
-        { "id": 7, "name": "EF76 Nebulon-B escort frigate'"},
-        { "id": 4, "name": "Slave 1'"}
+        {
+          "id": 14,
+          "name": "A-wing'"
+        },
+        {
+          "id": 15,
+          "name": "Executor'"
+        },
+        {
+          "id": 8,
+          "name": "Calamari Cruiser'"
+        },
+        {
+          "id": 7,
+          "name": "EF76 Nebulon-B escort frigate'"
+        },
+        {
+          "id": 4,
+          "name": "Slave 1'"
+        }
       ],
       "created": "2014-12-10T16:16:29.192000Z",
       "edited": "2014-12-20T21:17:50.325000Z"
@@ -459,13 +498,28 @@
       ],
       "species": [],
       "vehicles": [
-        { "id": 15, "name": "Multi-Troop Transport'"},
-        { "id": 10, "name": "Bantha-II cargo skiff'"}
+        {
+          "id": 15,
+          "name": "Multi-Troop Transport'"
+        },
+        {
+          "id": 10,
+          "name": "Bantha-II cargo skiff'"
+        }
       ],
       "starships": [
-        { "id": 1, "name": "Rebel transport'"},
-        { "id": 15, "name": "Executor'"},
-        { "id": 7, "name": "EF76 Nebulon-B escort frigate'"}
+        {
+          "id": 1,
+          "name": "Rebel transport'"
+        },
+        {
+          "id": 15,
+          "name": "Executor'"
+        },
+        {
+          "id": 7,
+          "name": "EF76 Nebulon-B escort frigate'"
+        }
       ],
       "created": "2014-12-10T16:20:44.310000Z",
       "edited": "2014-12-20T21:17:50.327000Z"
@@ -537,14 +591,26 @@
         }
       ],
       "species": [
-        { "id": 3, "name": "Wookie'"}
+        {
+          "id": 3,
+          "name": "Wookie'"
+        }
       ],
       "vehicles": [
-        { "id": 9, "name": "Sail barge'"}
+        {
+          "id": 9,
+          "name": "Sail barge'"
+        }
       ],
       "starships": [
-        { "id": 10, "name": "Millennium Falcon'"},
-        { "id": 6, "name": "Imperial shuttle'"}
+        {
+          "id": 10,
+          "name": "Millennium Falcon'"
+        },
+        {
+          "id": 6,
+          "name": "Imperial shuttle'"
+        }
       ],
       "created": "2014-12-10T16:42:45.066000Z",
       "edited": "2014-12-20T21:17:50.332000Z"
@@ -582,8 +648,14 @@
       "species": [],
       "vehicles": [],
       "starships": [
-        { "id": 10, "name": "Millennium Falcon'"},
-        { "id": 6, "name": "Imperial shuttle'"}
+        {
+          "id": 10,
+          "name": "Millennium Falcon'"
+        },
+        {
+          "id": 6,
+          "name": "Imperial shuttle'"
+        }
       ],
       "created": "2014-12-10T16:49:14.582000Z",
       "edited": "2014-12-20T21:17:50.334000Z"
@@ -611,7 +683,10 @@
         }
       ],
       "species": [
-        { "id": 4, "name": "Rodian'"}
+        {
+          "id": 4,
+          "name": "Rodian'"
+        }
       ],
       "vehicles": [],
       "starships": [],
@@ -1130,38 +1205,6 @@
         {
           "id": 14,
           "name": "Han Solo"
-        },
-        {
-          "id": 18,
-          "name": "Wedge Antilles"
-        },
-        {
-          "id": 20,
-          "name": "Yoda"
-        },
-        {
-          "id": 21,
-          "name": "Palpatine"
-        },
-        {
-          "id": 22,
-          "name": "Boba Fett"
-        },
-        {
-          "id": 23,
-          "name": "IG-88"
-        },
-        {
-          "id": 24,
-          "name": "Bossk"
-        },
-        {
-          "id": 25,
-          "name": "Lando Calrissian"
-        },
-        {
-          "id": 26,
-          "name": "Lobot"
         }
       ],
       "planets": [
@@ -1202,22 +1245,6 @@
         {
           "id": 15,
           "name": "Executor"
-        },
-        {
-          "id": 17,
-          "name": "Rebel transport"
-        },
-        {
-          "id": 21,
-          "name": "Slave 1"
-        },
-        {
-          "id": 22,
-          "name": "Imperial shuttle"
-        },
-        {
-          "id": 23,
-          "name": "EF76 Nebulon-B escort frigate"
         }
       ],
       "vehicles": [
@@ -2333,7 +2360,326 @@
   ],
   "starships": [
     {
-      "name": "starships"
+      "id":1,
+      "name": "Rebel transport",
+      "model": "GR-75 medium transport",
+      "manufacturer": "Gallofree Yards, Inc.",
+      "cost_in_credits": "unknown",
+      "length": "90",
+      "max_atmosphering_speed": "650",
+      "crew": "6",
+      "passengers": "90",
+      "cargo_capacity": "19000000",
+      "consumables": "6 months",
+      "hyperdrive_rating": "4.0",
+      "MGLT": "20",
+      "starship_class": "Medium transport",
+      "pilots": [],
+      "films": [
+        {
+          "id": 2,
+          "name": "Attack of the Clones"
+        },
+        {
+          "id": 3,
+          "name": "Revenge of the Sith"
+        }
+      ],
+      "created": "2014-12-15T12:34:52.264000Z",
+      "edited": "2014-12-20T21:23:49.895000Z"
+    },
+    {
+      "id": 2,
+      "name": "CR90 corvette",
+      "model": "CR90 corvette",
+      "manufacturer": "Corellian Engineering Corporation",
+      "cost_in_credits": "3500000",
+      "length": "150",
+      "max_atmosphering_speed": "950",
+      "crew": "30-165",
+      "passengers": "600",
+      "cargo_capacity": "3000000",
+      "consumables": "1 year",
+      "hyperdrive_rating": "2.0",
+      "MGLT": "60",
+      "starship_class": "corvette",
+      "pilots": [],
+      "films": [
+        {
+          "id": 1,
+          "name": "The Phantom Menace"
+        },
+        {
+          "id": 6,
+          "name": "Return of the Jedi"
+        },
+        {
+          "id": 3,
+          "name": "Revenge of the Sith"
+        }
+      ],
+      "created": "2014-12-10T14:20:33.369000Z",
+      "edited": "2014-12-20T21:23:49.867000Z",
+      "url": "https://swapi.dev/api/starships/2/"
+    },
+    {
+      "id": 3,
+      "name": "Star Destroyer",
+      "model": "Imperial I-class Star Destroyer",
+      "manufacturer": "Kuat Drive Yards",
+      "cost_in_credits": "150000000",
+      "length": "1,600",
+      "max_atmosphering_speed": "975",
+      "crew": "47,060",
+      "passengers": "n/a",
+      "cargo_capacity": "36000000",
+      "consumables": "2 years",
+      "hyperdrive_rating": "2.0",
+      "MGLT": "60",
+      "starship_class": "Star Destroyer",
+      "pilots": [],
+      "films": [
+        {
+          "id": 1,
+          "name": "The Phantom Menace"
+        },
+        {
+          "id": 2,
+          "name": "Attack of the Clones"
+        },
+        {
+          "id": 3,
+          "name": "Revenge of the Sith"
+        }
+      ],
+      "created": "2014-12-10T15:08:19.848000Z",
+      "edited": "2014-12-20T21:23:49.870000Z"
+    },
+    {
+      "id": 5,
+      "name": "Sentinel-class landing craft",
+      "model": "Sentinel-class landing craft",
+      "manufacturer": "Sienar Fleet Systems, Cyngus Spaceworks",
+      "cost_in_credits": "240000",
+      "length": "38",
+      "max_atmosphering_speed": "1000",
+      "crew": "5",
+      "passengers": "75",
+      "cargo_capacity": "180000",
+      "consumables": "1 month",
+      "hyperdrive_rating": "1.0",
+      "MGLT": "70",
+      "starship_class": "landing craft",
+      "pilots": [],
+      "films": [
+        {
+          "id": 1,
+          "name": "The Phantom Menace"
+        }
+      ],
+      "created": "2014-12-10T15:48:00.586000Z",
+      "edited": "2014-12-20T21:23:49.873000Z"
+    },
+    {
+      "id": 9,
+      "name": "Death Star",
+      "model": "DS-1 Orbital Battle Station",
+      "manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems",
+      "cost_in_credits": "1000000000000",
+      "length": "120000",
+      "max_atmosphering_speed": "n/a",
+      "crew": "342,953",
+      "passengers": "843,342",
+      "cargo_capacity": "1000000000000",
+      "consumables": "3 years",
+      "hyperdrive_rating": "4.0",
+      "MGLT": "10",
+      "starship_class": "Deep Space Mobile Battlestation",
+      "pilots": [],
+      "films": [
+        {
+          "id": 1,
+          "name": "The Phantom Menace"
+        }
+      ],
+      "created": "2014-12-10T16:36:50.509000Z",
+      "edited": "2014-12-20T21:26:24.783000Z"
+    },
+    {
+      "id": 10,
+      "name": "Millennium Falcon",
+      "model": "YT-1300 light freighter",
+      "manufacturer": "Corellian Engineering Corporation",
+      "cost_in_credits": "100000",
+      "length": "34.37",
+      "max_atmosphering_speed": "1050",
+      "crew": "4",
+      "passengers": "6",
+      "cargo_capacity": "100000",
+      "consumables": "2 months",
+      "hyperdrive_rating": "0.5",
+      "MGLT": "75",
+      "starship_class": "Light freighter",
+      "pilots": [
+        {
+          "id": 13,
+          "name": "Chewbacca"
+        },
+        {
+          "id": 14,
+          "name": "Han Solo"
+        }
+      ],
+      "films": [
+        {
+          "id": 1,
+          "name": "The Phantom Menace"
+        },
+        {
+          "id": 2,
+          "name": "Attack of the Clones"
+        },
+        {
+          "id": 3,
+          "name": "Revenge of the Sith"
+        }
+      ],
+      "created": "2014-12-10T16:59:45.094000Z",
+      "edited": "2014-12-20T21:23:49.880000Z"
+    },
+    {
+      "id": 11,
+      "name": "Y-wing",
+      "model": "BTL Y-wing",
+      "manufacturer": "Koensayr Manufacturing",
+      "cost_in_credits": "134999",
+      "length": "14",
+      "max_atmosphering_speed": "1000km",
+      "crew": "2",
+      "passengers": "0",
+      "cargo_capacity": "110",
+      "consumables": "1 week",
+      "hyperdrive_rating": "1.0",
+      "MGLT": "80",
+      "starship_class": "assault starfighter",
+      "pilots": [],
+      "films": [
+        {
+          "id": 1,
+          "name": "The Phantom Menace"
+        },
+        {
+          "id": 2,
+          "name": "Attack of the Clones"
+        },
+        {
+          "id": 3,
+          "name": "Revenge of the Sith"
+        }
+      ],
+      "created": "2014-12-12T11:00:39.817000Z",
+      "edited": "2014-12-20T21:23:49.883000Z"
+    },
+    {
+      "id": 13,
+      "name": "X-wing",
+      "model": "T-65 X-wing",
+      "manufacturer": "Incom Corporation",
+      "cost_in_credits": "149999",
+      "length": "12.5",
+      "max_atmosphering_speed": "1050",
+      "crew": "1",
+      "passengers": "0",
+      "cargo_capacity": "110",
+      "consumables": "1 week",
+      "hyperdrive_rating": "1.0",
+      "MGLT": "100",
+      "starship_class": "Starfighter",
+      "pilots": [
+        {
+          "id": 1,
+          "name": "Luke Skywalker"
+        },
+        {
+          "id": 9,
+          "name": "Biggs Darklighter"
+        }
+      ],
+      "films": [
+        {
+          "id": 1,
+          "name": "The Phantom Menace"
+        },
+        {
+          "id": 2,
+          "name": "Attack of the Clones"
+        },
+        {
+          "id": 3,
+          "name": "Revenge of the Sith"
+        }
+      ],
+      "created": "2014-12-12T11:19:05.340000Z",
+      "edited": "2014-12-20T21:23:49.886000Z"
+    },
+    {
+      "id":13,
+      "name": "TIE Advanced x1",
+      "model": "Twin Ion Engine Advanced x1",
+      "manufacturer": "Sienar Fleet Systems",
+      "cost_in_credits": "unknown",
+      "length": "9.2",
+      "max_atmosphering_speed": "1200",
+      "crew": "1",
+      "passengers": "0",
+      "cargo_capacity": "150",
+      "consumables": "5 days",
+      "hyperdrive_rating": "1.0",
+      "MGLT": "105",
+      "starship_class": "Starfighter",
+      "pilots": [
+        {
+          "id": 4,
+          "name": "Darth Vader"
+        }
+      ],
+      "films": [
+        {
+          "id": 1,
+          "name": "The Phantom Menace"
+        }
+      ],
+      "created": "2014-12-12T11:21:32.991000Z",
+      "edited": "2014-12-20T21:23:49.889000Z"
+    },
+    {
+      "id":15,
+      "name": "Executor",
+      "model": "Executor-class star dreadnought",
+      "manufacturer": "Kuat Drive Yards, Fondor Shipyards",
+      "cost_in_credits": "1143350000",
+      "length": "19000",
+      "max_atmosphering_speed": "n/a",
+      "crew": "279,144",
+      "passengers": "38000",
+      "cargo_capacity": "250000000",
+      "consumables": "6 years",
+      "hyperdrive_rating": "2.0",
+      "MGLT": "40",
+      "starship_class": "Star dreadnought",
+      "pilots": [],
+      "films": [
+        {
+          "id": 2,
+          "name": "Attack of the Clones"
+        },
+        {
+          "id": 3,
+          "name": "Revenge of the Sith"
+        }
+      ],
+      "created": "2014-12-15T12:31:42.547000Z",
+      "edited": "2014-12-20T21:23:49.893000Z"
     }
   ]
 }
