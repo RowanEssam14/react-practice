@@ -5,6 +5,8 @@ You are given a template and must replicate this application using all the techn
 In short, you will need to create a top menu with a list of pages available (episodes, characters, etc.) Selecting a page opens a list of items. If you click on a specific item in the list a page with complete information will open. It has a picture on the left, fields on the right, and at the top you need to add breadcrumbs. Some fields on the right should be links that lead to another page of a particular actor, movie, etc.
 In order not to complicate this project too much, you don't need to use `TypeScript`
 
+The file with the layout is in the `./Figma` folder at the root of the project
+
 The data for the display you get from the [Json-Server](https://github.com/typicode/json-server). To run it you have to run the command `yarn run devServer`
 
 The main task is to make completely two tabs people and movies. If you finish the main task quickly enough, you can also do the rest of the tabs using Extra endpoints
