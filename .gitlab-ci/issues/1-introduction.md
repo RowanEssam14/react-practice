@@ -8,7 +8,7 @@ Create a website using based on the Star Wars films that include a header with a
 ## Requirements:
 Create a React application using modern development practices and tools.
 
-Use the **[Figma layout](https://gitlab.nixdev.co/js/edu/asgmt/react/react-practice/-/tree/main/public)**,
+Use the **[Figma layout](https://gitlab.nixdev.co/js/edu/asgmt/react/react-practice/-/tree/develop/public)**,
 which is located in the public folder.
 
 The site must have a header, body and footer. Below will be described a short description of the pages, For a more detailed understanding, use the Figma layout on which we can see the exact dimensions or arrangement of elements.
