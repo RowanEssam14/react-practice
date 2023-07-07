@@ -28,7 +28,7 @@ The general view of the site should have a header with a logo on the left, a nav
 ### The _Episode page_ must have realized like this:
 
 _**Sorting:**_
-* Implement a dropdown menu for sorting options.
+* Implement a dropdown menu for sorting options by _release date_, _episode number_, and _episode name_.
 * Ensure the sorting updates the film list based on the selected option.
 
 _**Episode List:**_
