@@ -1,25 +1,33 @@
 image: node:19-alpine
 
 stages:
-  - prepare
+  # - prepare
   - build
   - check
 
-issues:
-  stage: prepare
-  image:
-    name: hub.gitlab.nixdev.co/js/mnt/issue-ci:latest
-    pull_policy: always
-  only:
-    refs:
-      - main
-    # changes:
-    #   - '.gitlab/issues/*.md'
-  script:
-    - /bin/bash -c /bin/issue
+# TODO
+# Prepare job created for automatization of writing introduction issues,
+# right now it's failed on student's environments
+# and successfully works on teacher environments
+# but doesn't update the introduction issue
+
+# issues:
+#   stage: prepare
+#   image:
+#     name: hub.gitlab.nixdev.co/js/mnt/issue-ci:latest
+#     pull_policy: always
+#   only:
+#     refs:
+#       - main
+#     # changes:
+#     #   - '.gitlab/issues/*.md'
+#   script:
+#     - /bin/bash -c /bin/issue
 
 build:
   stage: build
+  rules:
+    - when: always
   script:
     - yarn
   cache:
@@ -36,16 +44,17 @@ lint:
   dependencies:
     - build
   needs: ['build']
+  rules:
+    - if: $CI_MERGE_REQUEST_SOURCE_BRANCH_NAME !~ /^task-update/
   script:
     - yarn lint
 
 test:
   stage: check
   needs: ['build']
-  only:
-    - main
-    - merge_requests
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_SOURCE_BRANCH_NAME !~ /^task-update/'
   dependencies:
     - build
   script:
-    - yarn test
+    - yarn test:run
