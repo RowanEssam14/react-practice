@@ -45,7 +45,9 @@ lint:
     - build
   needs: ['build']
   rules:
-    - if: $CI_MERGE_REQUEST_SOURCE_BRANCH_NAME !~ /^task-update/
+    - if: $CI_MERGE_REQUEST_SOURCE_BRANCH_NAME == "task-update"
+      when: never
+    - when: on_success
   script:
     - yarn lint
 
@@ -53,7 +55,15 @@ test:
   stage: check
   needs: ['build']
   rules:
-    - if: '$CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_SOURCE_BRANCH_NAME !~ /^task-update/'
+    - if: $CI_MERGE_REQUEST_SOURCE_BRANCH_NAME == "task-update"
+      when: never
+    - if: $CI_COMMIT_BRANCH == "task-update"
+      when: never
+    - if: $CI_COMMIT_BRANCH == "main"
+      when: never
+    - if: $CI_COMMIT_BRANCH == "master"
+      when: never
+    - when: on_success
   dependencies:
     - build
   script:
