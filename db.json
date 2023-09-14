@@ -2460,7 +2460,49 @@
   ],
   "vehicles": [
     {
-      "name": "vehicles"
+        "vehicle_name": "Threadspeeder",
+        "image": "https://static.wikia.nocookie.net/starwars/images/d/dd/CompleteVehicles2018.png/revision/latest?cb=20210829161104",
+        "model": "Gary Kurtz, Rick McCallum",
+        "manufacturer": "1977-05-25",
+        "cost_in_credits": ["Character 1", "Character 2", "Character 3", "Character 4", "Character 5", "Character 6", "Character 7", "Character 8"],
+        "length": ["Planet 1", "Planet 2", "Planet 3"],
+        "max_atmosphere_speed": 1111,
+        "crew": 123,
+        "passengers": 123,
+        "cargo_capacity": 123,
+        "consumables": "Lorem ipsum",
+        "vehicle_class": 123,
+        "pilots": 123
+    },
+    {
+        "vehicle_name": "Speeder Bike",
+        "image": "https://static.wikia.nocookie.net/starwars/images/d/dd/CompleteVehicles2018.png/revision/latest?cb=20210829161104",
+        "model": "Gary Kurtz, Rick McCallum",
+        "manufacturer": "1977-05-25",
+        "cost_in_credits": ["Character 1", "Character 2", "Character 3", "Character 4", "Character 5", "Character 6", "Character 7", "Character 8"],
+        "length": ["Planet 1", "Planet 2", "Planet 3"],
+        "max_atmosphere_speed": 1111,
+        "crew": 123,
+        "passengers": 123,
+        "cargo_capacity": 123,
+        "consumables": "Lorem ipsum",
+        "vehicle_class": 123,
+        "pilots": 123
+    },
+    {
+        "vehicle_name": "Landspeeder",
+        "image": "https://static.wikia.nocookie.net/starwars/images/d/dd/CompleteVehicles2018.png/revision/latest?cb=20210829161104",
+        "model": "Gary Kurtz, Rick McCallum",
+        "manufacturer": "1977-05-25",
+        "cost_in_credits": ["Character 1", "Character 2", "Character 3", "Character 4", "Character 5", "Character 6", "Character 7", "Character 8"],
+        "length": ["Planet 1", "Planet 2", "Planet 3"],
+        "max_atmosphere_speed": 1111,
+        "crew": 123,
+        "passengers": 123,
+        "cargo_capacity": 123,
+        "consumables": "Lorem ipsum",
+        "vehicle_class": 123,
+        "pilots": 123
     }
   ],
   "starships": [
