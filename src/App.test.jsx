@@ -115,6 +115,6 @@ describe('App', () => {
     expect(charactersTitle).toBeInTheDocument()
 
     // Simulate navigation to a detailed character page
-    expect(screen.getByText('Luke Skywalker').toBeInTheDocument())
+    expect(screen.getByText('Luke Skywalker')).toBeInTheDocument()
   })
 })
