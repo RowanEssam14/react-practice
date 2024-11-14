@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 const useGetEpisodes = () => {
-  const [films, setEpisodes] = useState([])
+  const [episodes, setEpisodes] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
@@ -24,7 +24,7 @@ const useGetEpisodes = () => {
     fetchEpisodes()
   }, [])
 
-  return { films, loading, error }
+  return { episodes, loading, error }
 }
 
 export default useGetEpisodes
