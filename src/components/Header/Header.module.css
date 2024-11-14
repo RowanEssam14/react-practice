@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  height: 96px;
+  width: 100%;
+}
+
+.logoImage {
+  width: 80px;
+  height: 24px;
+}
+
+.navList {
+  display: flex;
+
+}
+
+.navItem {
+  list-style: none;
+}
+
+.navLink{
+  color: #fff;
+  text-decoration: none;
+  padding: 0 34px;
+}
+
+.navLink:hover{
+  color:#FFE81F;
+}
