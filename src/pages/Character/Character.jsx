@@ -1,30 +1,29 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
 import { Card, Pagination } from '../../components'
-import { useGetCharacters } from '../../hooks'
+import { fetchCharacters } from '../../store/slices/characters'
 import { getCharacterDescription } from '../../helper'
 import styles from './Character.module.css'
 
 const Characters = () => {
-  const { characters, loading, error } = useGetCharacters()
+  const dispatch = useDispatch()
+  const { characters, loading, error } = useSelector((state) => state.characters)
   const [currentPage, setCurrentPage] = useState(1)
   const resultsPerPage = 10
 
-  if (loading) {
-    return <p>Loading...</p>
-  }
+  useEffect(() => {
+    dispatch(fetchCharacters())
+  }, [dispatch])
 
-  if (error) {
-    return <p>Error: {error}</p>
-  }
+  if (loading) return <p>Loading...</p>
+  if (error) return <p>Error: {error}</p>
 
   const totalPages = Math.ceil(characters.length / resultsPerPage)
   const startIndex = (currentPage - 1) * resultsPerPage
   const endIndex = startIndex + resultsPerPage
   const currentCharacters = characters.slice(startIndex, endIndex)
 
-  const handlePageClick = (page) => {
-    setCurrentPage(page)
-  }
+  const handlePageClick = (page) => setCurrentPage(page)
 
   return (
     <div className={styles.pageContainer}>

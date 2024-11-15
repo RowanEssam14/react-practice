@@ -1,18 +1,20 @@
+import { useEffect } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
 import { Card } from '../../components'
-import { useGetEpisodes } from '../../hooks'
+import { fetchEpisodes } from '../../store/slices/episodes'
 import { getEpisodeDescription } from '../../helper'
 import styles from './Episodes.module.css'
 
 const Episodes = () => {
-  const { episodes, loading, error } = useGetEpisodes()
+  const dispatch = useDispatch()
+  const { episodes, loading, error } = useSelector((state) => state.episodes)
 
-  if (loading) {
-    return <p>Loading...</p>
-  }
+  useEffect(() => {
+    dispatch(fetchEpisodes())
+  }, [dispatch])
 
-  if (error) {
-    return <p>Error: {error}</p>
-  }
+  if (loading) return <p>Loading...</p>
+  if (error) return <p>Error: {error}</p>
 
   return (
     <div className={styles.pageContainer}>
