@@ -1,0 +1,35 @@
+/*Pagination*/
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.paginationButton {
+  margin: 0 5px;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+.paginationButton:hover {
+  background-color: #9F910F;
+  color: #fff;
+}
+
+.activeButton {
+  background-color: #9F910F;
+  color: #fff;
+  font-weight: bold;
+}
+
+.ellipsis {
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+

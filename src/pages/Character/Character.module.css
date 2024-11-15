@@ -6,7 +6,8 @@
   margin: 0 auto;
   padding: 24px;
   width: 1280px;
-  height: 1608px;
+  height: auto;
+  margin-bottom: 100px;
 }
 
 .pageTitle {
@@ -21,3 +22,4 @@
   justify-content: space-around;
   gap: 20px;
 }
+
