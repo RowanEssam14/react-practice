@@ -1,9 +1,10 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
+import { ENDPOINTS, ACTION_TYPES, MESSAGES } from '../../constants'
 
-export const fetchCharacters = createAsyncThunk('characters/fetchCharacters', async () => {
-  const response = await fetch('http://localhost:3004/characters')
+export const fetchCharacters = createAsyncThunk(ACTION_TYPES.FETCH_CHARACTERS, async () => {
+  const response = await fetch(ENDPOINTS.CHARACTERS)
   if (!response.ok) {
-    throw new Error('Failed to fetch characters')
+    throw new Error(MESSAGES.FETCH_CHARACTERS_ERROR)
   }
   return await response.json()
 })
@@ -12,22 +13,22 @@ const charactersSlice = createSlice({
   name: 'characters',
   initialState: {
     characters: [],
-    loading: false,
+    isLoading: false,
     error: null,
   },
   reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(fetchCharacters.pending, (state) => {
-        state.loading = true
+        state.isLoading = true
         state.error = null
       })
       .addCase(fetchCharacters.fulfilled, (state, action) => {
-        state.loading = false
+        state.isLoading = false
         state.characters = action.payload
       })
       .addCase(fetchCharacters.rejected, (state, action) => {
-        state.loading = false
+        state.isLoading = false
         state.error = action.error.message
       })
   },

@@ -1,12 +1,12 @@
-import styles from './Card.module.css'
 import PropTypes from 'prop-types'
+import styles from './Card.module.css'
 
 const Card = ({ cover, title, description, sticker }) => {
   return (
     <div>
       <div className={styles.card}>
         <div className={styles.cardMedia}>
-          <img className={styles.cardImage} src={cover} alt="data-image" />
+          <img className={styles.cardImage} src={cover} alt="" />
           {sticker && <strong className={styles.cardSticker}>+18</strong>}
         </div>
         <div className={styles.cardContent}>

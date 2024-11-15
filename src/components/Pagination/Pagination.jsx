@@ -1,5 +1,5 @@
-import styles from './Pagination.module.css'
 import Proptypes from 'prop-types'
+import styles from './Pagination.module.css'
 
 const Pagination = ({ totalPages, currentPage, onPageChange }) => {
   return (

@@ -1,8 +1,9 @@
 import { Routes, Route } from 'react-router-dom'
 import { Provider } from 'react-redux'
-import { Header } from './components'
+import { Header, Footer } from './components'
 import { Episodes, Characters } from './pages'
 import store from './store'
+import { ROUTES } from './constants'
 
 function App() {
   return (
@@ -10,9 +11,10 @@ function App() {
       <div>
         <Header />
         <Routes>
-          <Route index path="/episodes" element={<Episodes />} />
-          <Route path="/characters" element={<Characters />} />
+          <Route index path={ROUTES.EPISODES} element={<Episodes />} />
+          <Route path={ROUTES.CHARACTERS} element={<Characters />} />
         </Routes>
+        <Footer />
       </div>
     </Provider>
   )

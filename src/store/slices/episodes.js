@@ -1,9 +1,10 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
+import { ENDPOINTS, ACTION_TYPES, MESSAGES } from '../../constants'
 
-export const fetchEpisodes = createAsyncThunk('episodes/fetchEpisodes', async () => {
-  const response = await fetch('http://localhost:3004/films')
+export const fetchEpisodes = createAsyncThunk(ACTION_TYPES.FETCH_EPISODES, async () => {
+  const response = await fetch(ENDPOINTS.EPISODES)
   if (!response.ok) {
-    throw new Error('Failed to fetch episodes')
+    throw new Error(MESSAGES.FETCH_EPISODES_ERROR)
   }
   return await response.json()
 })
@@ -12,22 +13,22 @@ const episodesSlice = createSlice({
   name: 'episodes',
   initialState: {
     episodes: [],
-    loading: false,
+    isLoading: false,
     error: null,
   },
   reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(fetchEpisodes.pending, (state) => {
-        state.loading = true
+        state.isLoading = true
         state.error = null
       })
       .addCase(fetchEpisodes.fulfilled, (state, action) => {
-        state.loading = false
+        state.isLoading = false
         state.episodes = action.payload
       })
       .addCase(fetchEpisodes.rejected, (state, action) => {
-        state.loading = false
+        state.isLoading = false
         state.error = action.error.message
       })
   },
