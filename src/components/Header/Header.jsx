@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import styles from './Header.module.css'
 import Logo from '../../assets/Logo.svg'
 
@@ -11,14 +11,14 @@ const Header = () => {
       <nav>
         <ul className={styles.navList}>
           <li className={styles.navItem}>
-            <Link className={styles.navLink} to="/episodes">
+            <NavLink className={({ isActive }) => (isActive ? styles.active : styles.navLink)} to="/episodes">
               Episodes
-            </Link>
+            </NavLink>
           </li>
           <li className={styles.navItem}>
-            <Link className={`${styles.navLink} `} to="/characters">
+            <NavLink className={({ isActive }) => (isActive ? styles.active : styles.navLink)} to="/characters">
               Characters
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>

@@ -15,19 +15,24 @@
 
 .navList {
   display: flex;
-
 }
 
 .navItem {
   list-style: none;
 }
 
-.navLink{
+.navLink {
   color: #fff;
   text-decoration: none;
   padding: 0 34px;
 }
 
-.navLink:hover{
-  color:#FFE81F;
+.navLink:hover {
+  color: #ffe81f;
+}
+
+.active {
+  color: #ffe81f;
+  text-decoration: none;
+  padding: 0 34px;
 }
