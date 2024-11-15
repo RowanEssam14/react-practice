@@ -19,4 +19,17 @@ const getEpisodeDescription = (episode) => {
   ]
 }
 
-export { getEpisodeDescription }
+const getCharacterDescription = (character) => {
+  return [
+    {
+      label: 'Birth',
+      value: character.birth_year,
+    },
+    {
+      label: 'Gender',
+      value: character.gender,
+    },
+  ]
+}
+
+export { getEpisodeDescription, getCharacterDescription }
