@@ -1,0 +1,26 @@
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 14px;
+  color: #afafaf;
+  font-weight: 600;
+}
+
+.breadcrumbHome {
+  color: #9f910f;
+  text-decoration: none;
+}
+
+.breadcrumbLink {
+  text-decoration: none;
+  color: #afafaf;
+}
+
+.breadcrumbLink:hover {
+  text-decoration: none;
+}
+
+.breadcrumbLink:active {
+  text-decoration: none;
+}

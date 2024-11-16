@@ -1,5 +1,6 @@
 import { useParams, useLocation } from 'react-router-dom'
 import { useSelector } from 'react-redux'
+import { BreadCrumb } from '../../components'
 import { getCharacterDetails, getEpisodeDetails, getPlanetDetails } from '../../helper'
 import styles from './CardList.module.css'
 
@@ -45,7 +46,9 @@ const CardDetails = () => {
 
   return (
     <div className={styles.cardContainer}>
-      <header className={styles.header}>Home/ </header>
+      <header className={styles.header}>
+        <BreadCrumb />
+      </header>
       <div className={styles.main}>
         <div className={styles.media}>
           <img className={styles.mediaContent} src={item.src} alt={item.name} />

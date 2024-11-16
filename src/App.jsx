@@ -11,7 +11,8 @@ function App() {
       <div>
         <Header />
         <Routes>
-          <Route index path={ROUTES.EPISODES} element={<Episodes />} />
+          <Route index element={<Episodes />} />
+          <Route path={ROUTES.EPISODES} element={<Episodes />} />
           <Route path={ROUTES.EPISODES_DETAILS} element={<CardList />} />
 
           <Route path={ROUTES.CHARACTERS} element={<Characters />} />
