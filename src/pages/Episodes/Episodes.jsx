@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
+import { Link } from 'react-router-dom'
 import { Card } from '../../components'
 import { fetchEpisodes } from '../../store/slices/episodes'
 import { getEpisodeDescription } from '../../helper'
@@ -51,13 +52,11 @@ const Episodes = () => {
       </header>
       <div className={styles.cardsContainer}>
         {sortedEpisodes.map((episode) => (
-          <Card
-            key={episode.id}
-            cover={episode.src}
-            title={episode.name}
-            sticker={true}
-            description={getEpisodeDescription(episode)}
-          />
+          <Card key={episode.id} cover={episode.src} sticker={true} description={getEpisodeDescription(episode)}>
+            <Link to={`/episodes/${episode.id}`} className={styles.episodeLink}>
+              <h2 className={styles.cardTitle}>{episode.name}</h2>
+            </Link>
+          </Card>
         ))}
       </div>
     </div>
