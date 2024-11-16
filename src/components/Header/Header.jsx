@@ -20,6 +20,26 @@ const Header = () => {
               Characters
             </NavLink>
           </li>
+          <li className={styles.navItem}>
+            <NavLink className={({ isActive }) => (isActive ? styles.active : styles.navLink)} to={ROUTES.PLANETS}>
+              Planets
+            </NavLink>
+          </li>
+          <li className={styles.navItem}>
+            <NavLink className={({ isActive }) => (isActive ? styles.active : styles.navLink)} to={ROUTES.SPECIES}>
+              Species
+            </NavLink>
+          </li>
+          <li className={styles.navItem}>
+            <NavLink className={({ isActive }) => (isActive ? styles.active : styles.navLink)} to={ROUTES.VEHICLES}>
+              Vehicles
+            </NavLink>
+          </li>
+          <li className={styles.navItem}>
+            <NavLink className={({ isActive }) => (isActive ? styles.active : styles.navLink)} to={ROUTES.STARSHIPS}>
+              Starships
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>

@@ -1,34 +1,58 @@
-import { useParams } from 'react-router-dom'
+import { useParams, useLocation } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import { getCharacterDetails, getEpisodeDetails } from '../../helper'
+import { getCharacterDetails, getEpisodeDetails, getPlanetDetails } from '../../helper'
 import styles from './CardList.module.css'
 
-const CardList = () => {
+const CardDetails = () => {
   const { id } = useParams()
+  const location = useLocation()
   const { characters } = useSelector((state) => state.characters)
   const { episodes } = useSelector((state) => state.episodes)
+  const { planets } = useSelector((state) => state.planets)
 
-  const isCharacterRoute = window.location.pathname.includes('/characters')
-  const data = isCharacterRoute ? characters : episodes
+  const routeType = location.pathname.split('/')[1]
+  let data = []
+  let details = []
+  let notFoundMessage = ''
+
+  switch (routeType) {
+    case 'characters':
+      data = characters
+      details = getCharacterDetails
+      notFoundMessage = 'Character not found'
+      break
+    case 'episodes':
+      data = episodes
+      details = getEpisodeDetails
+      notFoundMessage = 'Episode not found'
+      break
+    case 'planets':
+      data = planets
+      details = getPlanetDetails
+      notFoundMessage = 'Planet not found'
+      break
+    default:
+      return <p>Invalid route</p>
+  }
 
   const item = data.find((dataItem) => dataItem.id === parseInt(id))
 
   if (!item) {
-    return <p>{isCharacterRoute ? 'Character not found' : 'Episode not found'}</p>
+    return <p>{notFoundMessage}</p>
   }
 
-  const details = isCharacterRoute ? getCharacterDetails(item) : getEpisodeDetails(item)
+  const itemDetails = details(item)
 
   return (
     <div className={styles.cardContainer}>
       <header className={styles.header}>Home/ </header>
       <div className={styles.main}>
         <div className={styles.media}>
-          <img className={styles.mediaContent} src={item.src} alt="" />
+          <img className={styles.mediaContent} src={item.src} alt={item.name} />
         </div>
         <div className={styles.cardDetails}>
           <h1 className={styles.title}>{item.name}</h1>
-          {details.map((detail) => (
+          {itemDetails.map((detail) => (
             <div key={detail.label} className={styles.cardDetail}>
               <span className={styles.label}>{detail.label}: </span>
               <span className={styles.value}>{detail.value}</span>
@@ -40,4 +64,4 @@ const CardList = () => {
   )
 }
 
-export default CardList
+export default CardDetails

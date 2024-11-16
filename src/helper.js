@@ -33,7 +33,7 @@ const getCharactersDescription = (character) => {
 }
 
 const getCharacterDetails = (character) => {
-  const details = [
+  return [
     { label: 'Height', value: character.height },
     { label: 'Mass', value: character.mass },
     { label: 'Hair Color', value: character.hair_color },
@@ -49,12 +49,10 @@ const getCharacterDetails = (character) => {
     { label: 'Created', value: character.created },
     { label: 'Edited', value: character.edited },
   ]
-
-  return details
 }
 
 const getEpisodeDetails = (episode) => {
-  const details = [
+  return [
     { label: 'Episode', value: episode.episode_name },
     { label: 'Director', value: episode.director },
     { label: 'Producer', value: episode.producer },
@@ -67,8 +65,45 @@ const getEpisodeDetails = (episode) => {
     { label: 'Created', value: episode.created },
     { label: 'Edited', value: episode.edited },
   ]
-
-  return details
 }
 
-export { getEpisodeDescription, getCharactersDescription, getCharacterDetails, getEpisodeDetails }
+const getplanetsDescription = (planet) => {
+  return [
+    {
+      label: 'Climate',
+      value: planet.climate,
+    },
+    {
+      label: 'Terrain',
+      value: planet.terrain,
+    },
+    {
+      label: 'Population',
+      value: planet.population,
+    },
+  ]
+}
+
+const getPlanetDetails = (planet) => {
+  return [
+    { label: 'Rotation Period', value: planet.rotation_period },
+    { label: 'Orbital Period', value: planet.orbital_period },
+    { label: 'Diameter', value: planet.diameter },
+    { label: 'Climate', value: planet.climate },
+    { label: 'Gravity', value: planet.gravity },
+    { label: 'Terrain', value: planet.terrain },
+    { label: 'Surface Water', value: planet.surface_water },
+    { label: 'Population', value: planet.population },
+    { label: 'Residents', value: planet.residents.map((resident) => resident.name).join(', ') },
+    { label: 'Films', value: planet.films.map((film) => film.name).join(', ') },
+  ]
+}
+
+export {
+  getEpisodeDescription,
+  getCharactersDescription,
+  getCharacterDetails,
+  getEpisodeDetails,
+  getplanetsDescription,
+  getPlanetDetails,
+}
