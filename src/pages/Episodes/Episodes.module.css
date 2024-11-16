@@ -43,3 +43,14 @@
   border: none;
   cursor: pointer;
 }
+
+.episodeLink {
+  all: unset;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.episodeLink:hover {
+  color:#9F910F
+}
+

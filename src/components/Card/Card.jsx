@@ -9,7 +9,7 @@ const Card = ({ cover, description, children, sticker }) => {
         {sticker && <strong className={styles.cardSticker}>+18</strong>}
       </div>
       <div className={styles.cardContent}>
-        {children}
+        <h2 className={styles.cardTitle}>{children}</h2>
         <div className={styles.cardDetails}>
           {description.map((item) => (
             <div key={item.label} className={styles.cardDetail}>

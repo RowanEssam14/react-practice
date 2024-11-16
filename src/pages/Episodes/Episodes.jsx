@@ -54,7 +54,7 @@ const Episodes = () => {
         {sortedEpisodes.map((episode) => (
           <Card key={episode.id} cover={episode.src} sticker={true} description={getEpisodeDescription(episode)}>
             <Link to={`/episodes/${episode.id}`} className={styles.episodeLink}>
-              <h2 className={styles.cardTitle}>{episode.name}</h2>
+              {episode.name}
             </Link>
           </Card>
         ))}

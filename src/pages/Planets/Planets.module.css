@@ -23,3 +23,13 @@
   gap: 20px;
 }
 
+.planetsLink {
+  all: unset;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.planetsLink:hover {
+  color:#9F910F
+}
+

@@ -33,7 +33,7 @@ const Characters = () => {
         {currentCharacters.map((character) => (
           <Card key={character.id} cover={character.src} description={getCharactersDescription(character)}>
             <Link to={`/characters/${character.id}`} className={styles.characterLink}>
-              <h2 className={styles.cardTitle}>{character.name}</h2>
+              {character.name}
             </Link>
           </Card>
         ))}

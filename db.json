@@ -2466,8 +2466,9 @@
   ],
   "vehicles": [
     {
+      "id": 1,
         "vehicle_name": "Threadspeeder",
-        "image": "https://static.wikia.nocookie.net/starwars/images/d/dd/CompleteVehicles2018.png/revision/latest?cb=20210829161104",
+        "src": "https://pictures.abebooks.com/isbn/9780241369838-uk.jpg",
         "model": "Gary Kurtz, Rick McCallum",
         "manufacturer": "1977-05-25",
         "cost_in_credits": ["Character 1", "Character 2", "Character 3", "Character 4", "Character 5", "Character 6", "Character 7", "Character 8"],
@@ -2481,8 +2482,9 @@
         "pilots": 123
     },
     {
+      "id": 2,
         "vehicle_name": "Speeder Bike",
-        "image": "https://static.wikia.nocookie.net/starwars/images/d/dd/CompleteVehicles2018.png/revision/latest?cb=20210829161104",
+        "src": "https://pictures.abebooks.com/isbn/9780241369838-uk.jpg",
         "model": "Gary Kurtz, Rick McCallum",
         "manufacturer": "1977-05-25",
         "cost_in_credits": ["Character 1", "Character 2", "Character 3", "Character 4", "Character 5", "Character 6", "Character 7", "Character 8"],
@@ -2496,8 +2498,9 @@
         "pilots": 123
     },
     {
+      "id": 3,
         "vehicle_name": "Landspeeder",
-        "image": "https://static.wikia.nocookie.net/starwars/images/d/dd/CompleteVehicles2018.png/revision/latest?cb=20210829161104",
+        "src": "https://pictures.abebooks.com/isbn/9780241369838-uk.jpg",
         "model": "Gary Kurtz, Rick McCallum",
         "manufacturer": "1977-05-25",
         "cost_in_credits": ["Character 1", "Character 2", "Character 3", "Character 4", "Character 5", "Character 6", "Character 7", "Character 8"],

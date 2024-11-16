@@ -99,6 +99,99 @@ const getPlanetDetails = (planet) => {
   ]
 }
 
+const getSpeciesDescription = (species) => {
+  return [
+    {
+      label: 'Classification',
+      value: species.classification,
+    },
+    {
+      label: 'Designation',
+      value: species.designation,
+    },
+  ]
+}
+
+const getSpeciesDetails = (species) => {
+  return [
+    { label: 'Classification', value: species.classification },
+    { label: 'Designation', value: species.designation },
+    { label: 'Average Lifespan', value: species.average_lifespan },
+    { label: 'Average Height', value: species.average_height },
+    { label: 'People', value: species.people.map((person) => person.name).join(', ') },
+    { label: 'Planets', value: species.planets.map((planet) => planet.name).join(', ') },
+    { label: 'Hair Colors', value: species.hair_colors },
+    { label: 'Eye Colors', value: species.eye_colors },
+    { label: 'Films', value: species.films.map((film) => film.name).join(', ') },
+  ]
+}
+const getVehiclesDescription = (vehicle) => {
+  return [
+    {
+      label: 'Model',
+      value: vehicle.model,
+    },
+    {
+      label: 'Manufacturer',
+      value: vehicle.manufacturer,
+    },
+    {
+      label: 'Cost in credits',
+      value: vehicle.cost_in_credits.map((credit) => credit.toString()).join(', '),
+    },
+  ]
+}
+
+const getVehicleDetails = (vehicle) => {
+  return [
+    { label: 'Model', value: vehicle.model },
+    { label: 'Manufacturer', value: vehicle.manufacturer },
+    { label: 'Cost in credits', value: vehicle.cost_in_credits.map((credit) => credit.toString()).join(', ') },
+    { label: 'Length', value: vehicle.length.map((length) => length.toString()).join(', ') },
+    { label: 'Max atm.speed', value: vehicle.max_atmosphere_speed },
+    { label: 'Crew', value: vehicle.crew },
+    { label: 'Passengers', value: vehicle.passengers },
+    { label: 'Cargo capacity', value: vehicle.cargo_capacity },
+    { label: 'Consumables', value: vehicle.consumables },
+    { label: 'Vehile class', value: vehicle.vehicle_class },
+    { label: 'Pilots', value: vehicle.pilots },
+  ]
+}
+
+const getStarshipsDescription = (starship) => {
+  return [
+    {
+      label: 'Model',
+      value: starship.model,
+    },
+    {
+      label: 'Manufacturer',
+      value: starship.manufacturer,
+    },
+    {
+      label: 'Cost in credits',
+      value: starship.cost_in_credits,
+    },
+  ]
+}
+
+const getStarshipDetails = (starship) => {
+  return [
+    { label: 'Model', value: starship.model },
+    { label: 'Manufacturer', value: starship.manufacturer },
+    { label: 'Cost in credits', value: starship.cost_in_credits },
+    { label: 'Length', value: starship.length },
+    { label: 'Max atm.speed', value: starship.max_atmosphering_speed },
+    { label: 'Crew', value: starship.crew },
+    { label: 'Passengers', value: starship.passengers },
+    { label: 'Cargo capacity', value: starship.cargo_capacity },
+    { label: 'Hyperdrive rating', value: starship.hyperdrive_rating },
+    { label: 'MGLT', value: starship.MGLT },
+    { label: 'Starship class', value: starship.starship_class },
+    { label: 'Pilots', value: starship.pilots.map((pilot) => pilot.name).join(', ') },
+  ]
+}
+
 export {
   getEpisodeDescription,
   getCharactersDescription,
@@ -106,4 +199,10 @@ export {
   getEpisodeDetails,
   getplanetsDescription,
   getPlanetDetails,
+  getSpeciesDescription,
+  getSpeciesDetails,
+  getVehiclesDescription,
+  getVehicleDetails,
+  getStarshipsDescription,
+  getStarshipDetails,
 }

@@ -24,7 +24,7 @@ const Planets = () => {
         {planets.map((planets) => (
           <Card key={planets.id} cover={planets.src} description={getplanetsDescription(planets)}>
             <Link to={`/planets/${planets.id}`} className={styles.planetsLink}>
-              <h2 className={styles.cardTitle}>{planets.name}</h2>
+              {planets.name}
             </Link>
           </Card>
         ))}
