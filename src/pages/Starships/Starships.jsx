@@ -49,7 +49,7 @@ const Starships = () => {
   return (
     <div className={styles.pageContainer}>
       <header className={styles.header}>
-        <h1 className={styles.pageTitle}>Vehicles</h1>
+        <h1 className={styles.pageTitle}>Starships</h1>
         <div className={styles.sortContainer}>
           <span className={styles.sortLabel}>Sort by:</span>
           <select className={styles.sortDropdown} value={sortCriteria} onChange={handleSortChange}>
