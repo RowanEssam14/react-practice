@@ -13,7 +13,7 @@ const Card = ({ cover, description, children, sticker, fit }) => {
         <div className={styles.cardDetails}>
           {description.map((item) => (
             <div key={item.label} className={styles.cardDetail}>
-              <span>{item.label}: </span> <span>{item.value || 'N/A'}</span>
+              <span className={styles.itemLabel}>{item.label}: </span> <span>{item.value || 'N/A'}</span>
             </div>
           ))}
         </div>

@@ -17,7 +17,7 @@
 
 .pageTitle {
   margin-bottom: 68px;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 600;
 }
 
@@ -51,6 +51,5 @@
 }
 
 .episodeLink:hover {
-  color:#9F910F
+  color: #9f910f;
 }
-

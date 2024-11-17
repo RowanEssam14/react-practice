@@ -3,6 +3,9 @@ import { vi } from 'vitest'
 import userEvent from '@testing-library/user-event'
 import axios from 'axios'
 import '@testing-library/jest-dom'
+import { BrowserRouter } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import store from './store'
 
 import App from './App'
 
@@ -104,7 +107,12 @@ global.fetch = vi.fn((url) => {
 describe('App', () => {
   it('navigates between pages and displays data', async () => {
     const user = userEvent.setup()
-    render(<App />)
+    render(
+      <Provider store={store}>
+        <App />
+      </Provider>,
+      { wrapper: BrowserRouter }
+    )
 
     // Simulate navigation to Characters page
     await user.click(screen.getAllByText('Characters')[0])

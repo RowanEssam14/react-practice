@@ -16,12 +16,12 @@
 }
 
 .paginationButton:hover {
-  background-color: #9F910F;
+  background-color: #9f910f;
   color: #fff;
 }
 
 .activeButton {
-  background-color: #9F910F;
+  background-color: #9f910f;
   color: #fff;
   font-weight: bold;
 }
@@ -31,4 +31,3 @@
   font-size: 18px;
   font-weight: bold;
 }
-

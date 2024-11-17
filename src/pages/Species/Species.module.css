@@ -12,7 +12,7 @@
 
 .pageTitle {
   margin-bottom: 68px;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 600;
 }
 
@@ -23,7 +23,7 @@
   gap: 20px;
 }
 
-.speciesLink{
+.speciesLink {
   all: unset;
   cursor: pointer;
   text-decoration: none;

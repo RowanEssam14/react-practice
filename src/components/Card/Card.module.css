@@ -50,4 +50,10 @@
   display: grid;
   grid-template-columns: 30% 70%;
   gap: 10px;
+  margin-bottom: 16px;
+}
+
+.itemLabel {
+  font-weight: 500;
+  color: #a6a6a6;
 }

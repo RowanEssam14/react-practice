@@ -18,6 +18,8 @@
 }
 
 .navItem {
+  font-weight: 14px;
+  font-size: 400;
   list-style: none;
 }
 
@@ -27,7 +29,8 @@
   padding: 0 34px;
 }
 
-.navLink:hover {
+.navLink:hover,
+.navLink:hover .icon {
   color: #ffe81f;
 }
 
@@ -35,4 +38,13 @@
   color: #ffe81f;
   text-decoration: none;
   padding: 0 34px;
+}
+
+.icon {
+  margin-right: 8px;
+  color: #fff;
+}
+
+.active .icon {
+  color: #ffe81f;
 }
