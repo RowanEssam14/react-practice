@@ -5,7 +5,7 @@ import { ROUTES } from './constants'
 
 function App() {
   return (
-    <div>
+    <main className="main-container">
       <Header />
       <Routes>
         <Route index element={<Episodes />} />
@@ -28,7 +28,7 @@ function App() {
         <Route path={ROUTES.VEHICLES_DETAILS} element={<CardList />} />
       </Routes>
       <Footer />
-    </div>
+    </main>
   )
 }
 

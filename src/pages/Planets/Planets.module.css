@@ -5,9 +5,8 @@
   background-color: #f6f6f6;
   margin: 0 auto;
   padding: 24px;
-  width: 1280px;
+  width: 100%;
   height: auto;
-  margin-bottom: 100px;
 }
 
 .pageTitle {
@@ -31,4 +30,23 @@
 
 .planetsLink:hover {
   color: #9f910f;
+  text-decoration: none;
+}
+
+@media ((min-width: 768px)) {
+  .pageContainer {
+    width: 727px;
+  }
+}
+
+@media ((min-width: 1024px)) {
+  .pageContainer {
+    width: 920px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .pageContainer {
+    width: 1280px;
+  }
 }

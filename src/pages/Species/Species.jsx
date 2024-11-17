@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { Card, Pagination } from '../../components'
 import { fetchSpecies } from '../../store/slices/species'
+import { ROUTES } from '../../constants'
 import { getSpeciesDescription } from '../../helper'
 import styles from './Species.module.css'
 
@@ -32,7 +33,7 @@ const Species = () => {
       <div className={styles.cardsContainer}>
         {currentSpecies.map((item) => (
           <Card key={item.id} cover={item.src} description={getSpeciesDescription(item)} fit="contain">
-            <Link to={`/species/${item.id}`} className={styles.speciesLink}>
+            <Link to={`${ROUTES.SPECIES}/${item.id}`} className={styles.speciesLink}>
               {item.name}
             </Link>
           </Card>

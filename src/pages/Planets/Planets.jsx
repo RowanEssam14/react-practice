@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { Card, Pagination } from '../../components'
 import { getplanetsDescription } from '../../helper'
 import { fetchPlanets } from '../../store/slices'
+import { ROUTES } from '../../constants'
 import styles from './Planets.module.css'
 
 const Planets = () => {
@@ -32,7 +33,7 @@ const Planets = () => {
       <div className={styles.cardsContainer}>
         {currentPlanets.map((planets) => (
           <Card key={planets.id} cover={planets.src} description={getplanetsDescription(planets)} fit="cover">
-            <Link to={`/planets/${planets.id}`} className={styles.planetsLink}>
+            <Link to={`${ROUTES.PLANETS}/${planets.id}`} className={styles.planetsLink}>
               {planets.name}
             </Link>
           </Card>

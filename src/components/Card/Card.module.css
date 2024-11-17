@@ -1,17 +1,20 @@
 .card {
-  width: 606px;
-  height: 272px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  min-height: 285px;
   background-color: #fff;
   color: #000;
-  display: flex;
   padding: 20px;
+  margin: 0 auto;
 }
 
 .cardMedia {
-  width: 223px;
+  width: 164px;
   height: 100%;
   position: relative;
-  overflow: hidden;
+  padding-bottom: 123%;
+  margin: 0 auto 10px auto;
 }
 
 .cardImage {
@@ -39,6 +42,7 @@
 
 .cardTitle {
   margin-bottom: 25px;
+  font-size: 18px;
 }
 
 .cardDetails {
@@ -48,12 +52,36 @@
 
 .cardDetail {
   display: grid;
-  grid-template-columns: 30% 70%;
-  gap: 10px;
+  grid-template-columns: 50% 50%;
+  gap: 8px;
   margin-bottom: 16px;
+  overflow-wrap: break-word;
 }
 
 .itemLabel {
   font-weight: 500;
   color: #a6a6a6;
+}
+
+@media ((min-width: 768px)) {
+  .card {
+    width: 325px;
+  }
+  .cardMedia {
+    width: 165px;
+    padding-bottom: 90%;
+    object-fit: contain;
+  }
+}
+
+@media ((min-width: 1024px)) {
+  .card {
+    flex-direction: row;
+    width: 606px;
+  }
+  .cardMedia {
+    width: 254px;
+    padding-bottom: 30%;
+  }
+
 }

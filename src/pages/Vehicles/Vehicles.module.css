@@ -5,9 +5,8 @@
   background-color: #f6f6f6;
   margin: 0 auto;
   padding: 24px;
-  width: 1280px;
+  width: 100%;
   height: auto;
-  margin-bottom: 100px;
 }
 
 .header {
@@ -31,6 +30,8 @@
 .sortContainer {
   font-size: 14px;
   font-weight: 600;
+  text-align: right;
+
 }
 
 .sortLabel {
@@ -52,4 +53,21 @@
 
 .vehicleLink:hover {
   color: #9f910f;
+}
+
+@media((min-width: 768px)){
+  .pageContainer {
+    width: 727px;
+  }
+}
+
+@media((min-width: 1024px)){
+  .pageContainer {
+    min-width: 920px;
+  }
+}
+@media (min-width: 1280px) {
+  .pageContainer {
+    width: 1280px;
+  }
 }

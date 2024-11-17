@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { Card, Pagination } from '../../components'
 import { getVehiclesDescription } from '../../helper'
 import { fetchVehicles } from '../../store/slices'
+import { ROUTES } from '../../constants'
 import styles from './Vehicles.module.css'
 
 const Vehicles = () => {
@@ -66,7 +67,7 @@ const Vehicles = () => {
       <div className={styles.cardsContainer}>
         {currentVehicles.map((vehicle) => (
           <Card key={vehicle.id} cover={vehicle.src} description={getVehiclesDescription(vehicle)} fit="cover">
-            <Link to={`/vehicles/${vehicle.id}`} className={styles.vehicleLink}>
+            <Link to={`${ROUTES.VEHICLES}/${vehicle.id}`} className={styles.vehicleLink}>
               {vehicle.vehicle_name}
             </Link>
           </Card>

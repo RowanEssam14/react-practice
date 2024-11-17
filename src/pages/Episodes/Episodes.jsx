@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { Card, Pagination } from '../../components'
 import { fetchEpisodes } from '../../store/slices'
+import { ROUTES } from '../../constants'
 import { getEpisodeDescription } from '../../helper'
 import styles from './Episodes.module.css'
 
@@ -68,7 +69,7 @@ const Episodes = () => {
             description={getEpisodeDescription(episode)}
             fit="cover"
           >
-            <Link to={`/episodes/${episode.id}`} className={styles.episodeLink}>
+            <Link to={`${ROUTES.EPISODES}/${episode.id}`} className={styles.episodeLink}>
               {episode.name}
             </Link>
           </Card>

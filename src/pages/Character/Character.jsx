@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { Card, Pagination } from '../../components'
 import { fetchCharacters } from '../../store/slices/characters'
+import { ROUTES } from '../../constants'
 import { getCharactersDescription } from '../../helper'
 import styles from './Character.module.css'
 
@@ -32,7 +33,7 @@ const Characters = () => {
       <div className={styles.cardsContainer}>
         {currentCharacters.map((character) => (
           <Card key={character.id} cover={character.src} description={getCharactersDescription(character)} fit="cover">
-            <Link to={`/characters/${character.id}`} className={styles.characterLink}>
+            <Link to={`${ROUTES.CHARACTERS}/${character.id}`} className={styles.characterLink}>
               {character.name}
             </Link>
           </Card>

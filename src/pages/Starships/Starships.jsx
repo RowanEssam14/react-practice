@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { Card, Pagination } from '../../components'
 import { getStarshipsDescription } from '../../helper'
 import { fetchStarShips } from '../../store/slices'
+import { ROUTES } from '../../constants'
 import styles from './Starships.module.css'
 
 const Starships = () => {
@@ -60,7 +61,7 @@ const Starships = () => {
       <div className={styles.cardsContainer}>
         {currentStarships.map((starShip) => (
           <Card key={starShip.id} cover={starShip.src} description={getStarshipsDescription(starShip)} fit="cover">
-            <Link to={`/starships/${starShip.id}`} className={styles.starShipLink}>
+            <Link to={`${ROUTES.STARSHIPS}/${starShip.id}`} className={styles.starShipLink}>
               {starShip.name}
             </Link>
           </Card>
