@@ -1,3 +1,55 @@
-.pageTitle{
-  color:white
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  background-color: #f6f6f6;
+  margin: 0 auto;
+  padding: 24px;
+  width: 1280px;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pageTitle {
+  margin-bottom: 68px;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.sortContainer {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.sortLabel {
+  color: #a6a6a6;
+}
+
+.sortDropdown {
+  outline-color: #f6f6f6;
+  background-color: #f6f6f6;
+  border: none;
+  cursor: pointer;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.starShipLink {
+  all: unset;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.starShipLink:hover {
+  text-decoration: underline;
 }

@@ -13,7 +13,7 @@ const Card = ({ cover, description, children, sticker, fit }) => {
         <div className={styles.cardDetails}>
           {description.map((item) => (
             <div key={item.label} className={styles.cardDetail}>
-              <span>{item.label}: </span> <span>{item.value}</span>
+              <span>{item.label}: </span> <span>{item.value || 'N/A'}</span>
             </div>
           ))}
         </div>
@@ -31,7 +31,7 @@ Card.propTypes = {
   description: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string.isRequired,
-      value: PropTypes.string.isRequired,
+      value: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.oneOf([null])]),
     })
   ).isRequired,
   sticker: PropTypes.bool,

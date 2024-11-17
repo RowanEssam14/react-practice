@@ -7,6 +7,7 @@ import {
   getPlanetDetails,
   getVehicleDetails,
   getSpeciesDetails,
+  getStarshipDetails,
 } from '../../helper'
 import styles from './CardList.module.css'
 
@@ -18,7 +19,7 @@ const CardDetails = () => {
   const { planets } = useSelector((state) => state.planets)
   const { species } = useSelector((state) => state.species)
   const { vehicles } = useSelector((state) => state.vehicles)
-  //const { Starships } = useSelector((state) => state.starships)
+  const { starShips } = useSelector((state) => state.starShips)
 
   const routeType = location.pathname.split('/')[1]
   let data = []
@@ -49,6 +50,11 @@ const CardDetails = () => {
     case 'species':
       data = species
       details = getSpeciesDetails
+      notFoundMessage = 'Planet not found'
+      break
+    case 'starships':
+      data = starShips
+      details = getStarshipDetails
       notFoundMessage = 'Planet not found'
       break
     default:

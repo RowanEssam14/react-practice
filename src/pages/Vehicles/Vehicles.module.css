@@ -10,6 +10,11 @@
   margin-bottom: 100px;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .pageTitle {
   margin-bottom: 68px;
   font-size: 36px;
@@ -23,6 +28,22 @@
   gap: 20px;
 }
 
+.sortContainer {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.sortLabel {
+  color: #a6a6a6;
+}
+
+.sortDropdown {
+  outline-color: #f6f6f6;
+  background-color: #f6f6f6;
+  border: none;
+  cursor: pointer;
+}
+
 .vehicleLink {
   all: unset;
   cursor: pointer;
@@ -30,6 +51,5 @@
 }
 
 .vehicleLink:hover {
-  color:#9F910F
+  color: #9f910f;
 }
-

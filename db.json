@@ -2467,11 +2467,11 @@
   "vehicles": [
     {
       "id": 1,
-        "vehicle_name": "Threadspeeder",
+        "vehicle_name": "Zhreadspeeder",
         "src": "https://pictures.abebooks.com/isbn/9780241369838-uk.jpg",
         "model": "Gary Kurtz, Rick McCallum",
         "manufacturer": "1977-05-25",
-        "cost_in_credits": ["Character 1", "Character 2", "Character 3", "Character 4", "Character 5", "Character 6", "Character 7", "Character 8"],
+        "cost_in_credits": ["Character 1", "Character 2", "Character 3", "Character 4", "Character 5"],
         "length": ["Planet 1", "Planet 2", "Planet 3"],
         "max_atmosphere_speed": 1111,
         "crew": 123,
@@ -2483,7 +2483,7 @@
     },
     {
       "id": 2,
-        "vehicle_name": "Speeder Bike",
+        "vehicle_name": "Apeeder Bike",
         "src": "https://pictures.abebooks.com/isbn/9780241369838-uk.jpg",
         "model": "Gary Kurtz, Rick McCallum",
         "manufacturer": "1977-05-25",
@@ -2503,7 +2503,7 @@
         "src": "https://pictures.abebooks.com/isbn/9780241369838-uk.jpg",
         "model": "Gary Kurtz, Rick McCallum",
         "manufacturer": "1977-05-25",
-        "cost_in_credits": ["Character 1", "Character 2", "Character 3", "Character 4", "Character 5", "Character 6", "Character 7", "Character 8"],
+        "cost_in_credits": ["Character 1"],
         "length": ["Planet 1", "Planet 2", "Planet 3"],
         "max_atmosphere_speed": 1111,
         "crew": 123,
