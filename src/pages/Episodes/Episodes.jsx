@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { Card } from '../../components'
-import { fetchEpisodes } from '../../store/slices/episodes'
+import { Card, Pagination } from '../../components'
+import { fetchEpisodes } from '../../store/slices'
 import { getEpisodeDescription } from '../../helper'
 import styles from './Episodes.module.css'
 
@@ -11,6 +11,15 @@ const Episodes = () => {
   const { episodes, loading, error } = useSelector((state) => state.episodes)
   const [sortedEpisodes, setSortedEpisodes] = useState([])
   const [sortCriteria, setSortCriteria] = useState('date')
+  const [currentPage, setCurrentPage] = useState(1)
+
+  const resultsPerPage = 10
+  const totalPages = Math.ceil(episodes.length / resultsPerPage)
+  const startIndex = (currentPage - 1) * resultsPerPage
+  const endIndex = startIndex + resultsPerPage
+  const currentEpisodes = sortedEpisodes.slice(startIndex, endIndex)
+
+  const handlePageClick = (page) => setCurrentPage(page)
 
   useEffect(() => {
     dispatch(fetchEpisodes())
@@ -51,14 +60,21 @@ const Episodes = () => {
         </div>
       </header>
       <div className={styles.cardsContainer}>
-        {sortedEpisodes.map((episode) => (
-          <Card key={episode.id} cover={episode.src} sticker={true} description={getEpisodeDescription(episode)}>
+        {currentEpisodes.map((episode) => (
+          <Card
+            key={episode.id}
+            cover={episode.src}
+            sticker={true}
+            description={getEpisodeDescription(episode)}
+            fit="cover"
+          >
             <Link to={`/episodes/${episode.id}`} className={styles.episodeLink}>
               {episode.name}
             </Link>
           </Card>
         ))}
       </div>
+      <Pagination totalPages={totalPages} currentPage={currentPage} onPageChange={handlePageClick} />
     </div>
   )
 }

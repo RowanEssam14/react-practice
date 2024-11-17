@@ -23,7 +23,12 @@
   gap: 20px;
 }
 
-.pageTitle{
-  color:white
+.speciesLink{
+  all: unset;
+  cursor: pointer;
+  text-decoration: none;
 }
 
+.speciesLink:hover {
+  text-decoration: underline;
+}

@@ -119,7 +119,7 @@ const getSpeciesDetails = (species) => {
     { label: 'Average Lifespan', value: species.average_lifespan },
     { label: 'Average Height', value: species.average_height },
     { label: 'People', value: species.people.map((person) => person.name).join(', ') },
-    { label: 'Planets', value: species.planets.map((planet) => planet.name).join(', ') },
+    { label: 'Planets', value: species.homeworld.map((planet) => planet.name).join(', ') },
     { label: 'Hair Colors', value: species.hair_colors },
     { label: 'Eye Colors', value: species.eye_colors },
     { label: 'Films', value: species.films.map((film) => film.name).join(', ') },

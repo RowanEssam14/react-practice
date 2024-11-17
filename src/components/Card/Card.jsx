@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types'
 import styles from './Card.module.css'
 
-const Card = ({ cover, description, children, sticker }) => {
+const Card = ({ cover, description, children, sticker, fit }) => {
   return (
     <div className={styles.card}>
       <div className={styles.cardMedia}>
-        <img className={styles.cardImage} src={cover} alt="" />
+        <img className={styles.cardImage} src={cover} alt="" style={{ objectFit: fit }} />
         {sticker && <strong className={styles.cardSticker}>+18</strong>}
       </div>
       <div className={styles.cardContent}>
@@ -36,6 +36,7 @@ Card.propTypes = {
   ).isRequired,
   sticker: PropTypes.bool,
   children: PropTypes.node.isRequired,
+  fit: PropTypes.oneOf(['contain', 'cover']),
 }
 
 export default Card

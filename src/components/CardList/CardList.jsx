@@ -1,7 +1,13 @@
 import { useParams, useLocation } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { BreadCrumb } from '../../components'
-import { getCharacterDetails, getEpisodeDetails, getPlanetDetails, getVehicleDetails } from '../../helper'
+import {
+  getCharacterDetails,
+  getEpisodeDetails,
+  getPlanetDetails,
+  getVehicleDetails,
+  getSpeciesDetails,
+} from '../../helper'
 import styles from './CardList.module.css'
 
 const CardDetails = () => {
@@ -10,7 +16,7 @@ const CardDetails = () => {
   const { characters } = useSelector((state) => state.characters)
   const { episodes } = useSelector((state) => state.episodes)
   const { planets } = useSelector((state) => state.planets)
-  //const {Species } = useSelector((state) => state.species)
+  const { species } = useSelector((state) => state.species)
   const { vehicles } = useSelector((state) => state.vehicles)
   //const { Starships } = useSelector((state) => state.starships)
 
@@ -38,6 +44,11 @@ const CardDetails = () => {
     case 'vehicles':
       data = vehicles
       details = getVehicleDetails
+      notFoundMessage = 'Planet not found'
+      break
+    case 'species':
+      data = species
+      details = getSpeciesDetails
       notFoundMessage = 'Planet not found'
       break
     default:
