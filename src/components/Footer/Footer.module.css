@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 80px;
+  width: 100%;
+  font-weight: 600px;
+  color: white;
+  background: #292929;
+}
+
+.footerList{
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
