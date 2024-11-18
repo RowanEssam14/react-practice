@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
 import PropTypes from 'prop-types'
-import { BreadCrumb } from '../../components'
-import styles from './CardList.module.css'
+import { BreadCrumb } from '..'
+import styles from './CardDetail.module.css'
 
 const CardDetails = ({ data, details, notFoundMessage }) => {
   const { id } = useParams()

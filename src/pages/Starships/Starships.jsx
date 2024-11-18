@@ -2,9 +2,10 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { Card, Pagination } from '../../components'
+import { useGetCurrentChapters } from '../../hooks'
 import { getStarshipsDescription } from '../../helper'
 import { fetchStarShips } from '../../store/slices'
-import { ROUTES, COMMON } from '../../constants'
+import { ROUTES } from '../../constants'
 import styles from './Starships.module.css'
 
 const Starships = () => {
@@ -13,11 +14,7 @@ const Starships = () => {
   const [sortedStarships, setSortedStarships] = useState([])
   const [sortCriteria, setSortCriteria] = useState('name')
   const [currentPage, setCurrentPage] = useState(1)
-
-  const totalPages = Math.ceil(starships.length / COMMON.resultsPerPage)
-  const startIndex = (currentPage - 1) * COMMON.resultsPerPage
-  const endIndex = startIndex + COMMON.resultsPerPage
-  const currentStarships = sortedStarships.slice(startIndex, endIndex)
+  const { currentItems, totalPages } = useGetCurrentChapters(currentPage, sortedStarships)
 
   const handlePageClick = (page) => setCurrentPage(page)
 
@@ -58,7 +55,7 @@ const Starships = () => {
         </div>
       </header>
       <div className={styles.cardsContainer}>
-        {currentStarships.map((starShip) => (
+        {currentItems.map((starShip) => (
           <Card key={starShip.id} cover={starShip.src} description={getStarshipsDescription(starShip)} fit="cover">
             <Link to={`${ROUTES.STARSHIPS}/${starShip.id}`} className={styles.starShipLink}>
               {starShip.name}

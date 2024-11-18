@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { Card, Pagination } from '../../components'
+import { useGetCurrentChapters } from '../../hooks'
 import { fetchEpisodes } from '../../store/slices'
-import { ROUTES, COMMON } from '../../constants'
+import { ROUTES } from '../../constants'
 import { getEpisodeDescription } from '../../helper'
 import styles from './Episodes.module.css'
 
@@ -13,11 +14,7 @@ const Episodes = () => {
   const [sortedEpisodes, setSortedEpisodes] = useState([])
   const [sortCriteria, setSortCriteria] = useState('date')
   const [currentPage, setCurrentPage] = useState(1)
-
-  const totalPages = Math.ceil(episodes.length / COMMON.resultsPerPage)
-  const startIndex = (currentPage - 1) * COMMON.resultsPerPage
-  const endIndex = startIndex + COMMON.resultsPerPage
-  const currentEpisodes = sortedEpisodes.slice(startIndex, endIndex)
+  const { currentItems, totalPages } = useGetCurrentChapters(currentPage, sortedEpisodes)
 
   const handlePageClick = (page) => setCurrentPage(page)
 
@@ -60,7 +57,7 @@ const Episodes = () => {
         </div>
       </header>
       <div className={styles.cardsContainer}>
-        {currentEpisodes.map((episode) => (
+        {currentItems.map((episode) => (
           <Card
             key={episode.id}
             cover={episode.src}

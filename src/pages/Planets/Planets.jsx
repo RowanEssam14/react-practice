@@ -2,20 +2,17 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { Card, Pagination } from '../../components'
+import { useGetCurrentChapters } from '../../hooks'
 import { getplanetsDescription } from '../../helper'
 import { fetchPlanets } from '../../store/slices'
-import { ROUTES, COMMON } from '../../constants'
+import { ROUTES } from '../../constants'
 import styles from './Planets.module.css'
 
 const Planets = () => {
   const dispatch = useDispatch()
   const { planets, loading, error } = useSelector((state) => state.planets)
   const [currentPage, setCurrentPage] = useState(1)
-
-  const totalPages = Math.ceil(planets.length / COMMON.resultsPerPage)
-  const startIndex = (currentPage - 1) * COMMON.resultsPerPage
-  const endIndex = startIndex + COMMON.resultsPerPage
-  const currentPlanets = planets.slice(startIndex, endIndex)
+  const { currentItems, totalPages } = useGetCurrentChapters(currentPage, planets)
 
   const handlePageClick = (page) => setCurrentPage(page)
 
@@ -30,7 +27,7 @@ const Planets = () => {
     <div className={styles.pageContainer}>
       <h1 className={styles.pageTitle}>Planets</h1>
       <div className={styles.cardsContainer}>
-        {currentPlanets.map((planets) => (
+        {currentItems.map((planets) => (
           <Card key={planets.id} cover={planets.src} description={getplanetsDescription(planets)} fit="cover">
             <Link to={`${ROUTES.PLANETS}/${planets.id}`} className={styles.planetsLink}>
               {planets.name}

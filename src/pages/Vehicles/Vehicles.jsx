@@ -2,9 +2,10 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { Card, Pagination } from '../../components'
+import { useGetCurrentChapters } from '../../hooks'
 import { getVehiclesDescription } from '../../helper'
 import { fetchVehicles } from '../../store/slices'
-import { ROUTES, COMMON } from '../../constants'
+import { ROUTES } from '../../constants'
 import styles from './Vehicles.module.css'
 
 const Vehicles = () => {
@@ -13,11 +14,7 @@ const Vehicles = () => {
   const [sortedVehicles, setSortedVehicles] = useState([])
   const [sortCriteria, setSortCriteria] = useState('vehicle_name')
   const [currentPage, setCurrentPage] = useState(1)
-
-  const totalPages = Math.ceil(vehicles.length / COMMON.resultsPerPage)
-  const startIndex = (currentPage - 1) * COMMON.resultsPerPage
-  const endIndex = startIndex + COMMON.resultsPerPage
-  const currentVehicles = sortedVehicles.slice(startIndex, endIndex)
+  const { currentItems, totalPages } = useGetCurrentChapters(currentPage, sortedVehicles)
 
   const handlePageClick = (page) => setCurrentPage(page)
 
@@ -64,7 +61,7 @@ const Vehicles = () => {
         </div>
       </header>
       <div className={styles.cardsContainer}>
-        {currentVehicles.map((vehicle) => (
+        {currentItems.map((vehicle) => (
           <Card key={vehicle.id} cover={vehicle.src} description={getVehiclesDescription(vehicle)} fit="cover">
             <Link to={`${ROUTES.VEHICLES}/${vehicle.id}`} className={styles.vehicleLink}>
               {vehicle.vehicle_name}
