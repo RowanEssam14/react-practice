@@ -1,9 +1,6 @@
-import styles from './Breadcrumb.module.css'
 import { Link, useLocation } from 'react-router-dom'
-
-const capitalizeFirstLetter = (str) => {
-  return str.charAt(0).toUpperCase() + str.slice(1)
-}
+import { capitalizeFirstLetter } from '../../helper'
+import styles from './Breadcrumb.module.css'
 
 const BreadCrumb = () => {
   const location = useLocation()

@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { Card, Pagination } from '../../components'
 import { fetchEpisodes } from '../../store/slices'
-import { ROUTES } from '../../constants'
+import { ROUTES, COMMON } from '../../constants'
 import { getEpisodeDescription } from '../../helper'
 import styles from './Episodes.module.css'
 
@@ -14,10 +14,9 @@ const Episodes = () => {
   const [sortCriteria, setSortCriteria] = useState('date')
   const [currentPage, setCurrentPage] = useState(1)
 
-  const resultsPerPage = 10
-  const totalPages = Math.ceil(episodes.length / resultsPerPage)
-  const startIndex = (currentPage - 1) * resultsPerPage
-  const endIndex = startIndex + resultsPerPage
+  const totalPages = Math.ceil(episodes.length / COMMON.resultsPerPage)
+  const startIndex = (currentPage - 1) * COMMON.resultsPerPage
+  const endIndex = startIndex + COMMON.resultsPerPage
   const currentEpisodes = sortedEpisodes.slice(startIndex, endIndex)
 
   const handlePageClick = (page) => setCurrentPage(page)

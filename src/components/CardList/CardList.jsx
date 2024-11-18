@@ -1,65 +1,10 @@
-import { useParams, useLocation } from 'react-router-dom'
-import { useSelector } from 'react-redux'
+import { useParams } from 'react-router-dom'
+import PropTypes from 'prop-types'
 import { BreadCrumb } from '../../components'
-import {
-  getCharacterDetails,
-  getEpisodeDetails,
-  getPlanetDetails,
-  getVehicleDetails,
-  getSpeciesDetails,
-  getStarshipDetails,
-} from '../../helper'
 import styles from './CardList.module.css'
 
-const CardDetails = () => {
+const CardDetails = ({ data, details, notFoundMessage }) => {
   const { id } = useParams()
-  const location = useLocation()
-  const { characters } = useSelector((state) => state.characters)
-  const { episodes } = useSelector((state) => state.episodes)
-  const { planets } = useSelector((state) => state.planets)
-  const { species } = useSelector((state) => state.species)
-  const { vehicles } = useSelector((state) => state.vehicles)
-  const { starShips } = useSelector((state) => state.starShips)
-
-  const routeType = location.pathname.split('/')[1]
-  let data = []
-  let details = []
-  let notFoundMessage = ''
-
-  switch (routeType) {
-    case 'characters':
-      data = characters
-      details = getCharacterDetails
-      notFoundMessage = 'Character not found'
-      break
-    case 'episodes':
-      data = episodes
-      details = getEpisodeDetails
-      notFoundMessage = 'Episode not found'
-      break
-    case 'planets':
-      data = planets
-      details = getPlanetDetails
-      notFoundMessage = 'Planet not found'
-      break
-    case 'vehicles':
-      data = vehicles
-      details = getVehicleDetails
-      notFoundMessage = 'Planet not found'
-      break
-    case 'species':
-      data = species
-      details = getSpeciesDetails
-      notFoundMessage = 'Planet not found'
-      break
-    case 'starships':
-      data = starShips
-      details = getStarshipDetails
-      notFoundMessage = 'Planet not found'
-      break
-    default:
-      return <p>Invalid route</p>
-  }
 
   const item = data.find((dataItem) => dataItem.id === parseInt(id))
 
@@ -90,6 +35,18 @@ const CardDetails = () => {
       </div>
     </div>
   )
+}
+
+CardDetails.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      src: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  details: PropTypes.func.isRequired,
+  notFoundMessage: PropTypes.string.isRequired,
 }
 
 export default CardDetails

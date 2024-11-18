@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { Card, Pagination } from '../../components'
 import { fetchCharacters } from '../../store/slices/characters'
-import { ROUTES } from '../../constants'
+import { ROUTES, COMMON } from '../../constants'
 import { getCharactersDescription } from '../../helper'
 import styles from './Character.module.css'
 
@@ -11,7 +11,6 @@ const Characters = () => {
   const dispatch = useDispatch()
   const { characters, loading, error } = useSelector((state) => state.characters)
   const [currentPage, setCurrentPage] = useState(1)
-  const resultsPerPage = 10
 
   useEffect(() => {
     dispatch(fetchCharacters())
@@ -20,9 +19,9 @@ const Characters = () => {
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error: {error}</p>
 
-  const totalPages = Math.ceil(characters.length / resultsPerPage)
-  const startIndex = (currentPage - 1) * resultsPerPage
-  const endIndex = startIndex + resultsPerPage
+  const totalPages = Math.ceil(characters.length / COMMON.resultsPerPage)
+  const startIndex = (currentPage - 1) * COMMON.resultsPerPage
+  const endIndex = startIndex + COMMON.resultsPerPage
   const currentCharacters = characters.slice(startIndex, endIndex)
 
   const handlePageClick = (page) => setCurrentPage(page)

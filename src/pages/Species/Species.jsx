@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { Card, Pagination } from '../../components'
 import { fetchSpecies } from '../../store/slices/species'
-import { ROUTES } from '../../constants'
+import { ROUTES, COMMON } from '../../constants'
 import { getSpeciesDescription } from '../../helper'
 import styles from './Species.module.css'
 
@@ -12,10 +12,9 @@ const Species = () => {
   const { species, loading, error } = useSelector((state) => state.species)
   const [currentPage, setCurrentPage] = useState(1)
 
-  const resultsPerPage = 10
-  const totalPages = Math.ceil(species.length / resultsPerPage)
-  const startIndex = (currentPage - 1) * resultsPerPage
-  const endIndex = startIndex + resultsPerPage
+  const totalPages = Math.ceil(species.length / COMMON.resultsPerPage)
+  const startIndex = (currentPage - 1) * COMMON.resultsPerPage
+  const endIndex = startIndex + COMMON.resultsPerPage
   const currentSpecies = species.slice(startIndex, endIndex)
 
   const handlePageClick = (page) => setCurrentPage(page)

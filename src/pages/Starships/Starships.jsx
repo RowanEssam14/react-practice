@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { Card, Pagination } from '../../components'
 import { getStarshipsDescription } from '../../helper'
 import { fetchStarShips } from '../../store/slices'
-import { ROUTES } from '../../constants'
+import { ROUTES, COMMON } from '../../constants'
 import styles from './Starships.module.css'
 
 const Starships = () => {
@@ -14,10 +14,9 @@ const Starships = () => {
   const [sortCriteria, setSortCriteria] = useState('name')
   const [currentPage, setCurrentPage] = useState(1)
 
-  const resultsPerPage = 10
-  const totalPages = Math.ceil(starships.length / resultsPerPage)
-  const startIndex = (currentPage - 1) * resultsPerPage
-  const endIndex = startIndex + resultsPerPage
+  const totalPages = Math.ceil(starships.length / COMMON.resultsPerPage)
+  const startIndex = (currentPage - 1) * COMMON.resultsPerPage
+  const endIndex = startIndex + COMMON.resultsPerPage
   const currentStarships = sortedStarships.slice(startIndex, endIndex)
 
   const handlePageClick = (page) => setCurrentPage(page)

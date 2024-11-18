@@ -5,6 +5,12 @@ const MESSAGES = {
   FETCH_SPECIES_ERROR: 'Failed to fetch species',
   FETCH_VEHICLES_ERROR: 'Failed to fetch vehicles',
   FETCH_STARSHIPS_ERROR: 'Failed to fetch starships',
+  EPISODE_NOT_FOUND_ERROR: 'Episode not found',
+  CHARACTER_NOT_FOUND_ERROR: 'Character not found',
+  PLANET_NOT_FOUND_ERROR: 'Planet not found',
+  SPECIES_NOT_FOUND_ERROR: 'Species not found',
+  VEHICLE_NOT_FOUND_ERROR: 'Vehicle not found',
+  STARSHIP_NOT_FOUND_ERROR: 'Starship not found',
 }
 
 export default MESSAGES
