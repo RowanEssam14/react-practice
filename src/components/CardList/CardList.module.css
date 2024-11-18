@@ -52,15 +52,15 @@
   grid-template-columns: 30% 70%;
   gap: 10px;
   margin-bottom: 18px;
+  text-align: left;
 }
 
 .label {
   font-weight: 500;
   color: #a6a6a6;
+
 }
-.value {
-  text-align-last: left;
-}
+
 
 @media (min-width: 321px) and (max-width: 768px) {
   .cardContainer {
@@ -79,10 +79,23 @@
 
 @media (min-width: 1025px) {
   .media {
+    width:30%;
     padding-bottom: 25%;
+  }
+  .mediaContent{
+    margin: 0;
   }
   .cardContainer {
     min-height: 960px;
     max-width: 1280px;
+  }
+  .main {
+    flex-direction: row;
+  }
+  .cardDetails{
+    text-align: left;
+  }
+  .cardDetail{
+    grid-template-columns: 20% 80%;
   }
 }
